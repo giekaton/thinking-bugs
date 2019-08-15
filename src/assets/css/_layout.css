@@ -1,0 +1,250 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#app {
+  height: 100%;
+}
+
+[v-cloak] {display: none}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.block-margin {
+  margin-bottom:60px;
+}
+
+.block-image {
+  margin-top:20px;
+  min-height:100px;
+  background-image:url(https://stress.toys/img/fidget-loader.gif);
+  background-repeat:no-repeat;
+  background-position:center center;
+}
+
+.block-rating-info {
+  padding-top:3px;
+}
+
+.block-rating-info a {
+  text-decoration: underline!important;
+  color: #007EAB!important;
+  border-bottom: 0px!important;
+}
+
+.block-rating {
+  padding: 10px;
+  border: 1px solid #999999;
+  border-radius: 3px;
+  background-color: lightgoldenrodyellow;
+}
+
+.block-product {
+  padding: 10px;
+  border: 1px solid #999999;
+  border-radius: 3px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.block-product-description {
+  font-size: 14px;
+  margin-bottom: -15px;
+}
+
+.block-bottom-text {
+  padding-top: 25px;
+  margin-bottom: -15px;
+}
+
+.social-icon-outer {
+  float:left;
+  width:30px;
+  margin-right: 15px;
+}
+
+.social-icon {
+  fill:rgb(226, 226, 226);
+}
+
+.social-icon:hover path {
+  fill: rgb(255, 255, 255);
+}
+
+.social-icon-menu {
+  fill:rgb(109, 109, 109);
+}
+
+.social-icon-menu:hover path {
+  fill: rgb(202, 202, 202);
+}
+
+.empty-space {
+  clear:both;
+  height: 20px;
+}
+
+.icon-div {
+  float:left;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background-color:#ffdada;
+  border: 1px solid rgb(255, 170, 170);
+  margin-right:5px;
+  text-align: center;
+  padding-top: 8px;
+  font-size:14px;
+  margin-bottom:50px;
+}
+
+.icon-div-extra {
+  float:left;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background-color:#daf0ff;
+  border: 1px solid #a4c9c2;
+  margin-right:5px;
+  text-align: center;
+  padding-top: 8px;
+  font-size:14px;
+  margin-bottom:50px;
+}
+
+.app-button {
+  padding:1px;
+  border:1px solid #999999;
+  border-radius:3px;
+  width:36px;
+  float:right;
+  text-align:center;
+  font-size:13px;
+  margin-top:18px;
+  cursor: pointer;
+  text-decoration:none;
+  background-color:#dce2e6;
+}
+
+/* .app-button:hover {
+  background-color:#f5f7ff;
+} */
+
+.app-button:active {
+  background-color: #e9eff3;
+}
+
+h2 {
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+
+/* Layout */
+
+.wrapper {
+  height: 100%;
+}
+
+.box-outer {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  overflow: visible;
+  /* padding: 10px; */
+  /* padding-left: 13px;
+  padding-right: 13px; */
+  background-color: white;
+  line-height: 18px;
+  padding-top: 0px;
+  margin: 0 auto;
+}
+
+.box {
+  position: relative;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.stress-toy-div {
+  width:50%;
+  float:left;
+  margin-bottom:30px;
+}
+
+.icon-text {
+  padding-left: 52px;
+}
+
+
+/* Custom scrollbars */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c5c5c5; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(180, 180, 180); 
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 630px) {
+  .box {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0px;
+    border-radius: 0px;
+  }
+  .right-menu {
+    margin-right: 6px;
+  }
+  .dig {
+    margin-bottom: 15px;
+  }
+  h2 {
+    margin-top: 10px;
+    margin-bottom: 18px;
+    
+  }
+  .sticky {
+    padding-left: 5px;
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  .stress-toy-div {
+    display:block;
+    width:100%;
+  }
+}

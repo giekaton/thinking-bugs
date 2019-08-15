@@ -1,0 +1,86 @@
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  max-width: 100%;
+  margin: 0 auto;
+  z-index: 10;
+  height: 61px;
+  background-color: #F1F1F2;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,.1), 0 2px 10px 0 rgba(0,0,0,.15);
+  background-image: url('https://stress.toys/img/adding-some-noise.png');
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.top {
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
+
+/* Animated HAMBURGER menu */
+
+.menu-wrapper {
+  position: relative;
+  float: right;
+  width: 24px;
+  top: 5px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before {
+  width: 24px;
+  height: 3px;
+}
+
+.hamburger-menu {
+  position: relative;
+  transform: translateY(25px);
+  background: #757575;
+  transition: all 0ms 150ms;
+}
+.hamburger-menu.animate {
+  background: #F1F1F2;
+}
+
+.hamburger-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  background: #757575;
+  transition: bottom 150ms 150ms cubic-bezier(0.23, 1, 0.32, 1), transform 150ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  background: #757575;
+  transition: top 150ms 150ms cubic-bezier(0.23, 1, 0.32, 1), transform 150ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu.animate:after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 150ms cubic-bezier(0.23, 1, 0.32, 1), transform 150ms 150ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu.animate:before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 150ms cubic-bezier(0.23, 1, 0.32, 1), transform 150ms 150ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* End of animated HAMBURGER menu */
