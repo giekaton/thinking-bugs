@@ -1,13 +1,30 @@
 # Thinking Errors and the CBT App
 
-First prototype, live version on [thinkingerrors.org](https://thinkingerrors.org)
+Client side, offline-first. Early beta version!
 
-To access the CBT App directly: [thinkingerrors.org/cbt-app](https://thinkingerrors.org/cbt-app)
+Live at: [https://thinkingerrors.org](https://thinkingerrors.org)
+
+To access the CBT App directly: [https://thinkingerrors.org/cbt-app](https://thinkingerrors.org/cbt-app)
 
 ## Todo
 
 - Update/improve content
-- Remove the current Wordpress backend, and make everything client-side only, Vue.js based
-- Make it an offline-first PWA
+~~Remove the current Wordpress backend, and make everything client-side only, Vue.js based~~
+- Make it an offline-first PWA (should show install promt, but doesn't, why?)
 - Create an end-to-end encrypted sync
-- Improve design
+- UI, UX polishing
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```

@@ -1,55 +1,11 @@
 <template>
-  <div id="my-app" class="page-wrapper">
+  <div id="app" data-server-rendered="true" class="page-wrapper">
 
-    <transition
-      name="loader-animation"
-      enter-active-class="animated fadeIn"
-      leave-active-class="animated fadeOut"
-    >
-      <progress-bar :show-loader="showLoader" :loader-style="loaderStyle"/>
-    </transition>
-
-    <app-header/>
+    <app-header @header-new="headerNew" />
     
     <div class="box" v-cloak>
       <div class="site-content">
-        <router-view v-if="!menuOpen"></router-view>
-
-        <div v-if="menuOpen">
-
-          <div v-if="cbtTutorial" style="margin-bottom:50px;">
-            To create a new note, click the plus button.
-          </div>
-
-          <cbt-app
-          v-for="dig in digs" 
-          v-bind:key="dig.id" 
-          v-bind:note="dig.text"
-          v-bind:id="dig.id"
-          v-bind:mini="dig.mini"
-          v-bind:errors="dig.errors"
-          @card-delete="cardDelete" 
-          @card-update="cardUpdate"
-          />
-
-          <br>
-          <span class="link-basic"  @click.prevent="cardCreate">New</span> | <span class="link-basic" @click="cbtDeleteAll">Delete all</span> | <span @click="cbtExport" class="link-basic">Export</span> | <span @click="cbtImport" class="link-basic">Import</span>
-          <br><br>
-          <br>
-          <span style="font-size:13px;">
-            This CBT app helps people to practice Cognitive Behavioral Therapy, based on the mood logging technique, as originally described by Dr. David D. Burns.
-            <br><br>
-            Anything you record in this app is private "by design". The app never sends any information to the internet. 
-            Your notes are saved on your local device only. If you delete the data, there will be no traces of it left. 
-            If you prefer to keep an archive, you can export/import it.
-            <br><br>
-            Create your first record by clicking on the New button. First, type your thought. Then identify the thinking errors and activate them by 
-            clicking on their circles. Then rewrite each error in a realistically positive and rational way. Finally, click the little red circle 
-            to mark the error as done.
-          </span>
-          <div style="height:25px;"></div>
-        </div>
-
+        <router-view></router-view>
       </div>
     </div>
     
@@ -59,285 +15,89 @@
 </template>
 
 <script>
-import { mapGetters, mapActions, mapMutations } from "vuex";
-import Header from "./components/partials/Header.vue";
-import Footer from "./components/partials/Footer.vue";
-import ProgressBar from "./components/partials/ProgressBar.vue";
-
-import CbtApp from './components/CbtApp.vue';
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
+
   name: 'App',
+
   data() {
     return {
-      cbtTutorial: false,
-      showLoader: true,
       menuOpen: false,
-      homeThemeAssetsPath: homeThemeAssetsPath,
-      version: 'v0.7.1-beta',
-      digs: [],
-      pages: [],
-      currentPage: '1',
-      currentPageName: '',
-      currentPageNameRemote: '',
-      view: 'notes',
-      loggedIn: false,
-      mobileChrome: false,
-      pwaChrome: false,
-      showNotes: true,
-      syncDataState: '',
-      initialSync: false,
-      moveNotesTo: 'trash',
-      splitScreen: false,
-      encryptionPass: '',
-      errors: { 
-        'AoN': {
-          'is': false,
-          'title': 'All or Nothing Thinking',
-          'full': 'All or Nothing Thinking - You look at things in absolute, black-and-white categories.',
-          'short': 'AoN',
-          'fixed': false,
-          'text': ''
-        },
-        'DP': { 
-          'is': false,
-          'title': 'Discounting Positives',
-          'full': 'Discounting Positives - You insist your positive qualities don\'t count.',
-          'short': 'DP',
-          'fixed': false,
-          'text': ''
-        },
-        'MoM': { 
-          'is': false,
-          'title': 'Magnification or Minimization',
-          'full': 'Magnification or Minimization - You blow things way out of proportion or shrink them.',
-          'short': 'MoM',
-          'fixed': false,
-          'text': ''
-        },
-        'Lab': { 
-          'is': false,
-          'title': 'Labeling',
-          'full': 'Labeling - Instead of saying, “I made a mistake,” you tell yourself, “I\'m a jerk” or “I\'m a loser.',
-          'short': 'Lab',
-          'fixed': false,
-          'text': ''
-        },
-        'Per': { 
-          'is': false,
-          'title': 'Personalization',
-          'full': 'Personalization - You consider negative or irrelevant events as having something to do with you.',
-          'short': 'Per',
-          'fixed': false,
-          'text': ''
-        },
-        'Ovg': { 
-          'is': false,
-          'title': 'Overgeneralization',
-          'full': 'Overgeneralization - You view a single negative event as a never-ending pattern of defeat.',
-          'short': 'Ovg',
-          'fixed': false,
-          'text': ''
-        },
-        'JtC': { 
-          'is': false,
-          'title': 'Jumping to Conclusions',
-          'full': 'Jumping to Conclusions - You jump to conclusions not warranted by the facts.',
-          'short': 'JtC',
-          'fixed': false,
-          'text': ''
-        },
-        'MR': { 
-          'is': false,
-          'title': 'Mind Reading',
-          'full': 'Mind Reading - You assume that people are reacting negatively to you.',
-          'short': 'MR',
-          'fixed': false,
-          'text': ''
-        },
-        'FT': { 
-          'is': false,
-          'title': 'Fortune Telling',
-          'full': 'Fortune Telling - You predict that things will turn out badly.',
-          'short': 'FT',
-          'fixed': false,
-          'text': ''
-        },
-        'ER': { 
-          'is': false,
-          'title': 'Emotional Reasoning',
-          'full': 'Emotional Reasoning - You reason from your feelings: “I feel like an idiot, so I must be one.”',
-          'short': 'ER',
-          'fixed': false,
-          'text': ''
-        },
-        'SB': { 
-          'is': false,
-          'title': 'Self Blame',
-          'full': 'Self Blame - You blame yourself for something you weren\'t entirely responsible for.',
-          'short': 'SB',
-          'fixed': false,
-          'text': ''
-        },
-        'OB': { 
-          'is': false,
-          'title': 'Other Blame',
-          'full': 'Other Blame - You blame others and overlook ways you contributed to the problem.',
-          'short': 'OB',
-          'fixed': false,
-          'text': ''
-        },
-        'MF': { 
-          'is': false,
-          'title': 'Mental Filter',
-          'full': 'Mental Filter - You dwell on the negatives and ignore the positives.',
-          'short': 'MF',
-          'fixed': false,
-          'text': ''
-        },
-        'SS': { 
-          'is': false,
-          'title': 'Should Statements',
-          'full': 'Should Statements - You use “shoulds,” “shouldn\'ts,” “musts,” “oughts,” and “have tos.”',
-          'short': 'SS',
-          'fixed': false,
-          'text': ''
-        },
-        
-        // 1: { 'AoN', DP', 'MoM', 'Lab', 'Per', 'Ovg', 'JtC', 'MR', 'FT', 'ER', 'SB', 'OB', 'MF', 'SS' }
-      }
+      version: 'v0.0.1-beta',
+      createNew: false,
     };
   },
-  computed: {
-    ...mapGetters({
-      isLoading: "isLoading",
-      loadingProgress: "loadingProgress"
-    }),
 
-    loaderStyle() {
-      return `width: ${this.loadingProgress}%;`;
-    }
+  computed: {
+
   },
 
   components: {
     appHeader: Header,
     appFooter: Footer,
-    ProgressBar,
-    CbtApp
   },
 
   watch: {
-    // watch the value of isLoading and once it's false hide the loader
-    isLoading(val) {
-      if (val == false) {
-        let self = this;
-        setTimeout(function() {
-          self.showLoader = false;
-        }, 1000);
-      }
-    }
+
   },
 
   methods: {
-    cardCreate: function() {
-      this.toTop();
-      let self = this;
 
-      dexie.notes.add({text: '', errors: self.errors, edit: Date.now()})
-      .then(function (id) {
-        dexie.notes.where({id: id}).first(function (note) {
-          self.digs.unshift({id: note.id, errors: note.errors, text: note.text });
-        });
-      })
-      .catch(e => {console.log('4', e)} );;
-
+    headerNew: function() {
+      this.createNew = true;
     },
-    cardDelete: function(id) {
-      let self = this;
-      function getIndex () {
-        for(var i = 0; i < self.digs.length; i += 1) {
-          if(self.digs[i].id == id) { return i; }
-        }
-      }
-      let index = getIndex();
-      // delete from dynamic store
-      self.digs.splice(index, 1);
-    },
-    cardUpdate: function(el) {
-      let self = this;
-      let id = el.id;
-      let note = el.note;
-
-      function getIndex () {
-        for(var i = 0; i < self.digs.length; i += 1) {
-          if(self.digs[i].id == id) { return i; }
-        }
-      }
-      let index = getIndex();
-
-      this.digs[index].text = note;
-    },
+    
     toTop: function() {
       document.body.scrollTop = 0;
-      // this.view = 'notes';
     },
+
     initialDataLoad: function () {
       let self = this;
-
-      // let note1 = 'Welcome\n\nKoto is a notes taking progressive web app. It is private and secure by design. It works on any device and synchronizes with all devices. To use it from anywhere, open kotonotes.com in your browser.';
-      // let note2 = 'Highlights\n\n- Plain text notes.\n- Local encryption by default.\n- End-to-end encrypted sync.\n- Share encrypted notes with anyone.\n- Local backups in text files and PDF.\n- Split-screen editing.\n- Move and organize notes in pages.\n- Open source. Run it on your own.\n- Offline-first serverless architecture.\n- Simple and slick user interface.\n- Always free.';
-
-      // let lastUpdate = Date.now();
-
-      // dexie.notes.add({text: note1, edit: lastUpdate})
-      // .then(function (id) {
-      //   self.digs[id] = {text: note1, id: id};
-      // });
-
-      // dexie.notes.add({text: note2, edit: lastUpdate})
-      // .then(function (id) {
-      //   self.digs.unshift({id: id, text: note2, mini: true});
-      // });
-
-      // load notes from indexedDB
-      dexie.notes.toArray(function(notes) {
-        notes.forEach ( note => {
-          self.digs.unshift({id: note.id, errors: note.errors, text: note.text });
-        });
-      })
-      .catch(e => {console.log('20', e)} );
-    },
-    cbtDeleteAll: function() {
-      if (confirm('Are you sure you want to delete all data?')) {
-        dexie.notes.clear();
-        this.digs = [];
-      }
-    },
-    cbtExport: function() {
-      alert('Soon...');
-    },
-    cbtImport: function() {
-      alert('Soon...');
     },
   },
 
+  beforeMount() {
+
+  },
+
   mounted () {
-    if (this.$route.name == 'CbtApp') {
-      this.menuOpen = !this.menuOpen;
-    };
-    
-    this.initialDataLoad();
 
-  // console.log(this.digs[0]);
-
-    // if (typeof(this.digs[0]) == 'undefined') {
-    //   this.cbtTutorial = true;
-    // }
   }
+  
 };
 </script>
 
 <style>
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  line-height: 140%;
+}
+
+h1 {
+  line-height: 120%;
+  margin-top: 0px;
+  font-size: 26px;
+}
+
+h4 {
+  margin-top: 50px;
+}
+
+.site-content {
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 60px;
+
+  @media (--desktop) {
+    max-width: 1200px;
+  }
+
+}
+
   .link-basic {
     color: rgb(0, 174, 255);
     cursor: pointer;
@@ -346,4 +106,310 @@ export default {
   .link-basic:hover {
     text-decoration: underline;
   }
+
+  body {
+  /* font-family: 'Work Sans', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+::placeholder {
+  color: rgb(202, 202, 202);
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-size: 13px;
+}
+
+
+
+.font-smaller {
+  font-size: 14px;
+}
+
+
+.te-div-text { 
+  float:left;
+  margin-left:4px;
+  padding-top:0px; 
+}
+
+.small {
+  font-size: 13px;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.color-orange {
+  color: orange;
+}
+
+a, a:link, a:visited, a:active, a:hover {
+  color: #222;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  margin-bottom:10px;
+  border-bottom: 2px solid #6ca8c580;
+}
+
+.link {
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  margin-bottom: 0px!important;
+  border-bottom: 2px solid #6ca8c580;
+}
+
+.link-icon {
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+}
+
+.underline {
+  border-bottom: 1px solid grey;
+}
+
+.active:active {
+  border-bottom: 1px solid grey;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#app {
+  height: 100%;
+}
+
+[v-cloak] {display: none}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.block-margin {
+  margin-bottom:60px;
+}
+
+.block-image {
+  margin-top:20px;
+  min-height:100px;
+  background-image:url(https://stress.toys/img/fidget-loader.gif);
+  background-repeat:no-repeat;
+  background-position:center center;
+}
+
+.block-rating-info {
+  padding-top:3px;
+}
+
+.block-rating-info a {
+  text-decoration: underline!important;
+  color: #007EAB!important;
+  border-bottom: 0px!important;
+}
+
+.block-rating {
+  padding: 10px;
+  border: 1px solid #999999;
+  border-radius: 3px;
+  background-color: lightgoldenrodyellow;
+}
+
+.block-product {
+  padding: 10px;
+  border: 1px solid #999999;
+  border-radius: 3px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.block-product-description {
+  font-size: 14px;
+  margin-bottom: -15px;
+}
+
+.block-bottom-text {
+  padding-top: 25px;
+  margin-bottom: -15px;
+}
+
+.social-icon-outer {
+  float:left;
+  width:30px;
+  margin-right: 15px;
+}
+
+.social-icon {
+  fill:rgb(226, 226, 226);
+}
+
+.social-icon:hover path {
+  fill: rgb(255, 255, 255);
+}
+
+.social-icon-menu {
+  fill:rgb(109, 109, 109);
+}
+
+.social-icon-menu:hover path {
+  fill: rgb(202, 202, 202);
+}
+
+.empty-space {
+  clear:both;
+  height: 20px;
+}
+
+.icon-div {
+  float:left;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background-color:#ffdada;
+  border: 1px solid rgb(255, 170, 170);
+  margin-right:5px;
+  text-align: center;
+  padding-top: 8px;
+  font-size:14px;
+  margin-bottom:50px;
+}
+
+.icon-div-extra {
+  float:left;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background-color:#daf0ff;
+  border: 1px solid #a4c9c2;
+  margin-right:5px;
+  text-align: center;
+  padding-top: 8px;
+  font-size:14px;
+  margin-bottom:50px;
+}
+
+
+h2 {
+  margin-top: 0px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+
+/* Layout */
+
+.wrapper {
+  height: 100%;
+}
+
+.box-outer {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  overflow: visible;
+  /* padding: 10px; */
+  /* padding-left: 13px;
+  padding-right: 13px; */
+  background-color: white;
+  line-height: 18px;
+  padding-top: 0px;
+  margin: 0 auto;
+}
+
+.box {
+  position: relative;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.te-div {
+  width:50%;
+  float:left;
+  margin-bottom:30px;
+  padding-right:10px;
+}
+
+.icon-text {
+  padding-left: 52px;
+}
+
+
+/* Custom scrollbars */
+
+/* ::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c5c5c5; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(180, 180, 180); 
+} */
+
+
+/* Mobile */
+
+@media only screen and (max-width: 630px) {
+  .box {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0px;
+    border-radius: 0px;
+  }
+  .right-menu {
+    margin-right: 6px;
+  }
+  .dig {
+    margin-bottom: 15px;
+  }
+  h2 {
+    margin-top: 10px;
+    margin-bottom: 18px;
+    
+  }
+  .sticky {
+    padding-left: 5px;
+  }
+  /* ::-webkit-scrollbar {
+    width: 5px;
+  } */
+  .te-div {
+    display:block;
+    width:100%;
+  }
+}
 </style>
