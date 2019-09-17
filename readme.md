@@ -25,6 +25,6 @@ npm run build
 
 - Update/improve content
 - ~~Remove the current Wordpress backend, and make everything client-side only, Vue.js based~~
-- Make it an offline-first PWA (should already show install promt, but doesn't - why?)
+- ~~Make it an offline-first PWA~~
 - Create E2EE sync
 - UI, UX polishing
