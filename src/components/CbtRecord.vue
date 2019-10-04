@@ -116,6 +116,9 @@ export default {
 
       dexie.notes.update(this.id, {errors: this.errors, edit: Date.now()})
       .catch(e => {console.log('errorFixed', e)} );
+    },
+    installPWA: function() {
+      window.deferredPrompt.prompt();
     }
   },
   props: ['note', 'id', 'mini', 'errors'],

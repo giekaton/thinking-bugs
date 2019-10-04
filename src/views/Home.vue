@@ -4,7 +4,8 @@
     <h2 style="line-height: 120%;margin-bottom:-10px;font-weight:300;">The Thinking Errors List</h2>
     <br>
     <span style="font-size:13px;">
-      Originally defined by Dr. David D. Burns for the practice of Cognitive Behavioral Therapy (CBT).
+      The classical cognitive distortions, as defined in the practice of Cognitive Behavioral Therapy (CBT).
+      <!-- Originally defined by Dr. David D. Burns for the practice of Cognitive Behavioral Therapy (CBT). -->
     </span>
 
     <div style="height:60px;"></div>

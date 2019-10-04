@@ -4,7 +4,7 @@
 
     <div v-if="digs.length == 0" style="margin-bottom:60px;">
       <h4>
-        To create a new record, click Plus or New.
+        To create a new record, click the link or the button "New"
       </h4>
     </div>
 
@@ -22,17 +22,26 @@
     <br><br>
     <br>
     <span style="font-size:13px;">
-      This CBT app helps people to practice Cognitive Behavioral Therapy, based on the mood logging technique, as originally described by Dr. David D. Burns.
-      <br><br>
-      Anything you record in this app is private "by design". The app never sends any information to the internet. 
-      Your notes are saved on your local device only. If you delete the data, there will be no traces of it left. 
-      If you prefer to keep an archive, you can export/import it.
+      This CBT app is a digital version of the Cognitive Behavioral Therapy practice, based on the <a href="https://feelinggood.com/tag/daily-mood-log/" target="_blank">mood logging technique</a>, as described and popularized by Dr. David D. Burns.
       <br><br>
       Create your first record by clicking on the New button. First, type your thought. Then identify the thinking errors and activate them by 
-      clicking on their circles. Then rewrite each error in a realistically positive and rational way. Finally, click the little red circle 
-      to mark the error as done.
+      clicking on their circles. After that, rewrite each thinking error in a realistically positive and rational way. Finally, click the little red circle 
+      to mark the error as done (it becomes green).
+      <br><br>
+      Things that you write in this app are private by design. The app is client-side and it never sends any information to the internet. 
+      Your notes are saved on your local device only, in the browser you are currently using. There are no accounts. If you delete the records, they are deleted permanently.
+      <br><br>
+      You can export your records, and import them later if you want to have them on a different computer, mobile device, or just in another browser. Export is also useful to keep 
+      an archive of your records in case you later want to review them. You can also share the exported records with your therapist for a review of your work or a consultation.
+      <br><br>
+      When you import notes from a backup, the existing records in the app (if any) are deleted 
+      and replaced with the new ones from the imported archive. So, if you want to work with multiple backup files, it's best to use a separate browser or an incognito window.
+      <br><br>
+      Being a Progressive Web App (PWA), it is an offline-first app and can be <span @click="installPWA()" class="link">installed</span> on most mobile and desktop devices and used even without the internet.
+      <br><br>
+
     </span>
-    <div style="height:60px;"></div>
+    <div style="height:40px;"></div>
 
   </div>
 
@@ -225,11 +234,71 @@ export default {
     },
 
     cbtExport: function() {
-      alert('Soon...');
+
+      let data = JSON.stringify(this.digs);
+
+      let txtContent = "data:text;charset=utf-8,";
+      txtContent += data;
+
+      let fileName = "CBT-Records-"+new Date().toJSON().slice(0,19)+"-"+this.$parent.version+".cbt";
+      let encodedUri = encodeURI(txtContent);
+      let link = document.createElement("a");
+      link.setAttribute("href", encodedUri);
+      link.setAttribute("download", fileName);
+      document.body.appendChild(link); // Required for FF
+      link.click();
+
     },
 
     cbtImport: function() {
-      alert('Soon...');
+
+      let element = document.createElement('div');
+      element.innerHTML = '<input type="file">';
+      let fileInput = element.firstChild;
+
+      fileInput.addEventListener('change', () => {
+        let file = fileInput.files[0];
+
+        if (file.name.match(/\.(cbt)$/)) {
+          let reader = new FileReader();
+
+          reader.onload = () => {
+
+            dexie.notes.clear();
+            this.digs = [];
+
+            let plainNotes = JSON.parse(reader.result);
+            console.log(plainNotes[0]);
+            // plainNotes = JSON.parse(plainNotes[0]);
+
+            let plainNotesArray = [];
+            let i = 0;
+            plainNotes.forEach ( note => {
+              plainNotesArray.push(note);
+              i++;
+              if (i == plainNotes.length) {
+                // update db
+                dexie.notes.bulkAdd( plainNotesArray )
+                .then(() => {
+                  dexie.notes.toArray( (notes) => {      
+                    notes.forEach ( note => {
+                      console.log(note);
+                      this.digs.unshift({id: note.id, errors: note.errors, text: note.text });
+                    });
+                  })
+                  .catch(e => {console.log('20', e)} );
+                })
+              }
+            });
+          };
+
+          reader.readAsText(file);  
+        } else {
+            alert("File not supported, .cbt files only");
+        }
+      });
+      fileInput.click();
+
     },
     
     getRecordId: function (el) {

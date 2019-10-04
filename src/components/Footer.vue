@@ -82,8 +82,8 @@ export default {
 
   @media only screen and (max-width: 600px) {
     .footer {
-      padding-left:5px;
-      padding-right:5px;
+      padding-left:0px;
+      padding-right:3px;
     }
   }
 

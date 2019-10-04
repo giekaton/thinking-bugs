@@ -59,12 +59,18 @@ export default {
     About
   },
 
-  mounted() {
+  watch:{
+    '$route' (to, from){
+      if (to != from) {
+        this.autoRoute = this.$route.path.substr(1)
+      }
+    }
+  },
 
+  mounted() {
     if (this.$route.path.substr(1) == 'cbt-app') {
       this.$parent.menuOpen = true;
     }
-    
   },
 
 }
