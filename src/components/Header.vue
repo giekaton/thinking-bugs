@@ -9,26 +9,26 @@
         <div @click="toTop" class="logo">
           <router-link :to="homePath">
             <div class="logo-icon"></div>
-            <div class="logo-text">Thinking Errors</div>
+            <div class="logo-text heading">Thinking Bugs</div>
           </router-link>
         </div>
       </div>
 
       <!-- Right side -->
       <router-link v-if="this.$route.name == 'CbtApp'" to="/">
-        <div class="app-button" style="width:34px;">
+        <div class="app-button heading" style="width:34px;">
           ▷
         </div>
       </router-link>
 
       <router-link v-if="this.$route.name != 'CbtApp'" to="/cbt-app">
-        <div class="app-button" style="width:75px;font-weight:bold;" title="Cognitive Behavioral Therapy App">
+        <div class="app-button heading" style="width:75px;font-weight:bold;" title="Cognitive Behavioral Therapy App">
           CBT App
         </div>
       </router-link>
 
       <!-- New card -->
-      <div v-if="this.$route.name == 'CbtApp'" @click.prevent="cardCreate" class="app-button" title="New record" style="font-weight:bold;margin-right:15px;width:55px;">
+      <div v-if="this.$route.name == 'CbtApp'" @click.prevent="cardCreate" class="app-button heading" title="New record" style="font-weight:bold;margin-right:15px;width:55px;">
         New
       </div>
 
@@ -95,14 +95,14 @@
 
 .app-button {
   height:30px;
-  padding-top:3px;
+  padding-top:4px;
   border:1px solid #999999;
   border-radius:3px;
   width:45px;
   float:right;
   text-align:center;
   font-size:13px;
-  margin-top:17px;
+  margin-top:18px;
   cursor: pointer;
   text-decoration:none;
   background-color:#dce2e6;
@@ -117,21 +117,23 @@
 }
 
 .logo {
-  margin-top:21px;
+  margin-top:22px;
   cursor: pointer;
 }
 
 .logo-text {
-  color:#3d3d3d!important;
+  
+  color:#000!important;
   /* margin-right:25px; */
-  font-size:17px;
+  font-size:15px;
   border-bottom:0px!important;
   display:inline-block;
   /* font-weight: 600; */
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   float:left;
   padding-left:10px;
-  margin-top:1.5px;
+  font-weight: bold;
+  margin-top:1px;
 }
 
 .logo-icon {
@@ -165,17 +167,13 @@
   z-index: 10;
   height: 66px;
   background-color: #F1F1F2;
-  box-shadow: 0 2px 10px 0 rgba(0,0,0,.1), 0 2px 10px 0 rgba(0,0,0,.15);
-  background-image: url('https://thinkingerrors.org/img/adding-some-noise.png');
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.1), 0 2px 10px 0 rgba(0,0,0,.15);
 }
 
 @media only screen and (max-width: 600px) {
   .header {
     padding-left: 15px;
     padding-right: 15px;
-  }
-  .logo-text {
-    font-size:16px;
   }
 }
 

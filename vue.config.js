@@ -11,7 +11,7 @@ module.exports = {
         staticDir: path.join(__dirname, 'dist'),
 
         // Required - Routes to render.
-        routes: [ '/', '/about', '/cbt-app', '/all-or-nothing-thinking', '/discounting-positives', '/emotional-reasoning', '/fortune-telling', '/jumping-to-conclusions', '/labeling', '/magnification-or-minimization', '/mental-filter', '/mind-reading', '/other-blame', '/overgeneralization', '/personalization', '/self-blame', '/should-statements' ],
+        routes: [ '/', '/about', '/cbt-app', '/all-or-nothing-thinking', '/discounting-positives', '/emotional-reasoning', '/fortune-telling', '/labeling', '/magnification-or-minimization', '/mental-filter', '/mind-reading', '/other-blame', '/overgeneralization', '/personalization', '/self-blame', '/magical-thinking', '/should-statements' ],
 
       })
     ]

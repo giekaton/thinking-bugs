@@ -25,7 +25,7 @@ export default {
   data() {
     return {
       menuOpen: false,
-      version: 'v0.0.1-beta',
+      version: 'v0.0.2-beta',
       createNew: false,
     };
   },
@@ -72,19 +72,22 @@ export default {
 <style>
 
 h3 {
-  margin-top: 30px;
-  margin-bottom: 60px;
+  /* margin-top: 30px; */
+  margin-bottom: 40px;
   line-height: 140%;
+  font-size: 20px;
+  font-weight: normal;
 }
 
 h1 {
   line-height: 120%;
   margin-top: 0px;
-  font-size: 26px;
+  font-size: 24px;
 }
 
 h4 {
   margin-top: 50px;
+  font-size: 16px;
 }
 
 .site-content {
@@ -97,7 +100,9 @@ h4 {
   }
 
 }
-
+.bug-title {
+  font-weight:bold;
+}
   .link-basic {
     color: rgb(0, 174, 255);
     cursor: pointer;
@@ -106,13 +111,24 @@ h4 {
   .link-basic:hover {
     text-decoration: underline;
   }
+  
+  .heading {
+    Font-Family: 'Noto Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4 {
+    Font-Family: 'Noto Sans', sans-serif;
+  }
 
   body {
   /* font-family: 'Work Sans', sans-serif; */
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  /* Font-Family: 'Sintony'; */
+Font-Size: 14px;
   color: #222;
-  font-size: 15px;
-  line-height: 23px;
+  /* font-size: 15px; */
+  /* line-height: 23px; */
+  line-height: 140%;
 }
 
 ::placeholder {
@@ -216,7 +232,6 @@ body {
 .block-image {
   margin-top:20px;
   min-height:100px;
-  background-image:url(https://stress.toys/img/fidget-loader.gif);
   background-repeat:no-repeat;
   background-position:center center;
 }

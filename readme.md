@@ -2,9 +2,9 @@
 
 Client side, offline-first. Early beta version!
 
-Live at: [https://thinkingerrors.org](https://thinkingerrors.org)
+Live at: [https://thinkingbugs.com](https://thinkingbugs.com)
 
-To access the CBT App directly: [https://thinkingerrors.org/cbt-app](https://thinkingerrors.org/cbt-app)
+To access the CBT App directly: [https://thinkingbugs.com/cbt-app](https://thinkingbugs.com/cbt-app)
 
 ## Project setup
 ```

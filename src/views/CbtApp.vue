@@ -2,10 +2,16 @@
 
   <div>
 
-    <div v-if="digs.length == 0" style="margin-bottom:60px;">
-      <h4>
-        To create a new record, click the link or the button "New"
-      </h4>
+    <div v-if="digs.length == 0">
+
+      <div style="padding-top:21px;margin-bottom:80px;">
+        <span style="line-height:150%;font-size:18px;font-weight:bold;">
+        Cognitive Behavioral Therapy Online (CBT App)
+        </span>
+        <div style="height:20px;"></div>
+        To create a new thought record, click the bottom link or the top button "New".
+      </div>
+      
     </div>
 
     <cbt-record           
@@ -19,17 +25,26 @@
 
     <br>
     <span class="link-basic"  @click.prevent="cardCreate">New</span> | <span class="link-basic" @click="cbtDeleteAll">Delete all</span> | <span @click="cbtExport" class="link-basic">Export</span> | <span @click="cbtImport" class="link-basic">Import</span>
-    <br><br>
-    <br>
-    <span style="font-size:13px;">
-      This CBT app is a digital version of the Cognitive Behavioral Therapy practice, based on the <a href="https://feelinggood.com/tag/daily-mood-log/" target="_blank">mood logging technique</a>, as described and popularized by Dr. David D. Burns.
+    
+    <div style="height:60px;"></div>
+
+    <!-- <div style="border-top:1px solid grey;height:20px;"></div> -->
+
+    <div style="font-size:13px;padding:20px;padding-top:30px;background-color:#f1f1f2;border-radius:3px;border: 1px solid #bdbdbd;">
+      <b>Quick Start</b>
       <br><br>
-      Create your first record by clicking on the New button. First, type your thought. Then identify the thinking errors and activate them by 
+      Create your first thought record by clicking on the New button. First, type your thought. Then identify the thinking errors and activate them by 
       clicking on their circles. After that, rewrite each thinking error in a realistically positive and rational way. Finally, click the little red circle 
       to mark the error as done (it becomes green).
+      <br><br><br>
+      <b>About</b>
       <br><br>
-      Things that you write in this app are private by design. The app is client-side and it never sends any information to the internet. 
+      This CBT app is a digital version of the Cognitive Behavioral Therapy practice, based on the <a href="https://feelinggood.com/tag/daily-mood-log/" target="_blank">mood logging technique</a>, as described and popularized by Dr. David D. Burns.
+      <br><br>
+      Thoughts that you record in this app are private by design. The app is client-side and it never sends any information to the internet. 
       Your notes are saved on your local device only, in the browser you are currently using. There are no accounts. If you delete the records, they are deleted permanently.
+      <br><br>
+      Being a Progressive Web App (PWA), it is an offline-first app and can be <span @click="installPWA()" class="link">installed</span> on most mobile and desktop devices and used even without the internet.
       <br><br>
       You can export your records, and import them later if you want to have them on a different computer, mobile device, or just in another browser. Export is also useful to keep 
       an archive of your records in case you later want to review them. You can also share the exported records with your therapist for a review of your work or a consultation.
@@ -37,10 +52,8 @@
       When you import notes from a backup, the existing records in the app (if any) are deleted 
       and replaced with the new ones from the imported archive. So, if you want to work with multiple backup files, it's best to use a separate browser or an incognito window.
       <br><br>
-      Being a Progressive Web App (PWA), it is an offline-first app and can be <span @click="installPWA()" class="link">installed</span> on most mobile and desktop devices and used even without the internet.
-      <br><br>
+    </div>
 
-    </span>
     <div style="height:40px;"></div>
 
   </div>
@@ -81,19 +94,27 @@ export default {
           'fixed': false,
           'text': ''
         },
-        'DP': { 
-          'is': false,
-          'title': 'Discounting Positives',
-          'full': 'Discounting Positives - You insist your positive qualities don\'t count.',
-          'short': 'DP',
-          'fixed': false,
-          'text': ''
-        },
         'MoM': { 
           'is': false,
           'title': 'Magnification or Minimization',
           'full': 'Magnification or Minimization - You blow things way out of proportion or shrink them.',
           'short': 'MoM',
+          'fixed': false,
+          'text': ''
+        },
+        'MF': { 
+          'is': false,
+          'title': 'Mental Filter',
+          'full': 'Mental Filter - You dwell on the negatives and ignore the positives.',
+          'short': 'MF',
+          'fixed': false,
+          'text': ''
+        },
+        'DP': { 
+          'is': false,
+          'title': 'Discounting Positives',
+          'full': 'Discounting Positives - You insist your positive qualities don\'t count.',
+          'short': 'DP',
           'fixed': false,
           'text': ''
         },
@@ -113,22 +134,14 @@ export default {
           'fixed': false,
           'text': ''
         },
-        'Ovg': { 
-          'is': false,
-          'title': 'Overgeneralization',
-          'full': 'Overgeneralization - You view a single negative event as a never-ending pattern of defeat.',
-          'short': 'Ovg',
-          'fixed': false,
-          'text': ''
-        },
-        'JtC': { 
-          'is': false,
-          'title': 'Jumping to Conclusions',
-          'full': 'Jumping to Conclusions - You jump to conclusions not warranted by the facts.',
-          'short': 'JtC',
-          'fixed': false,
-          'text': ''
-        },
+        // 'JtC': { 
+        //   'is': false,
+        //   'title': 'Jumping to Conclusions',
+        //   'full': 'Jumping to Conclusions - You jump to conclusions not warranted by the facts.',
+        //   'short': 'JtC',
+        //   'fixed': false,
+        //   'text': ''
+        // },
         'MR': { 
           'is': false,
           'title': 'Mind Reading',
@@ -145,11 +158,19 @@ export default {
           'fixed': false,
           'text': ''
         },
-        'ER': { 
+        'Ovg': { 
           'is': false,
-          'title': 'Emotional Reasoning',
-          'full': 'Emotional Reasoning - You reason from your feelings: “I feel like an idiot, so I must be one.”',
-          'short': 'ER',
+          'title': 'Overgeneralization',
+          'full': 'Overgeneralization - You view a single negative event as a never-ending pattern of defeat.',
+          'short': 'Ovg',
+          'fixed': false,
+          'text': ''
+        },
+        'SS': { 
+          'is': false,
+          'title': 'Should Statements',
+          'full': 'Should Statements - You use “shoulds,” “shouldn\'ts,” “musts,” “oughts,” and “have tos.”',
+          'short': 'SS',
           'fixed': false,
           'text': ''
         },
@@ -169,19 +190,19 @@ export default {
           'fixed': false,
           'text': ''
         },
-        'MF': { 
+        'ER': { 
           'is': false,
-          'title': 'Mental Filter',
-          'full': 'Mental Filter - You dwell on the negatives and ignore the positives.',
-          'short': 'MF',
+          'title': 'Emotional Reasoning',
+          'full': 'Emotional Reasoning - You reason from your feelings: “I feel like an idiot, so I must be one.”',
+          'short': 'ER',
           'fixed': false,
           'text': ''
         },
-        'SS': { 
+        'Mag': { 
           'is': false,
-          'title': 'Should Statements',
-          'full': 'Should Statements - You use “shoulds,” “shouldn\'ts,” “musts,” “oughts,” and “have tos.”',
-          'short': 'SS',
+          'title': 'Magical Thinking',
+          'full': 'Magical Thinking - The Fallacy of Fairness, If Only, Control Tendencies etc.',
+          'short': 'Mag',
           'fixed': false,
           'text': ''
         },
@@ -240,7 +261,7 @@ export default {
       let txtContent = "data:text;charset=utf-8,";
       txtContent += data;
 
-      let fileName = "CBT-Records-"+new Date().toJSON().slice(0,19)+"-"+this.$parent.version+".cbt";
+      let fileName = "CBT-Records-"+new Date().toJSON().slice(0,19)+"-"+this.$parent.version+".txt";
       let encodedUri = encodeURI(txtContent);
       let link = document.createElement("a");
       link.setAttribute("href", encodedUri);
@@ -259,7 +280,7 @@ export default {
       fileInput.addEventListener('change', () => {
         let file = fileInput.files[0];
 
-        if (file.name.match(/\.(cbt)$/)) {
+        if (file.name.match(/\.(txt)$/)) {
           let reader = new FileReader();
 
           reader.onload = () => {
@@ -294,7 +315,7 @@ export default {
 
           reader.readAsText(file);  
         } else {
-            alert("File not supported, .cbt files only");
+            alert("File not supported, .txt files only");
         }
       });
       fileInput.click();
