@@ -4,7 +4,7 @@
     <div class="footer site-footer">
       <div class="footer-content" style="padding-top:12px;">
         
-        <span style="float:left;"><router-link to="/about" class="footer-link" style="border-bottom: 1px solid #e7e7e7!important;">About</router-link></span>
+        <span style="float:left;"><router-link to="/about" class="footer-link" style="border-bottom: 1px solid #e7e7e7!important;text-decoration:none!important;">About</router-link></span>
 
         <span style="float:right;">
 
@@ -82,8 +82,8 @@ export default {
 
   @media only screen and (max-width: 600px) {
     .footer {
-      padding-left:0px;
-      padding-right:3px;
+      padding-left:5px;
+      padding-right:6px;
     }
   }
 

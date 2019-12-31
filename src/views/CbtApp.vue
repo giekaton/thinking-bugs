@@ -1,15 +1,20 @@
 <template>
 
-  <div>
+  <div class="links-content">
 
     <div v-if="digs.length == 0">
 
-      <div style="padding-top:21px;margin-bottom:80px;">
-        <span style="line-height:150%;font-size:18px;font-weight:bold;">
-        Cognitive Behavioral Therapy Online (CBT App)
-        </span>
-        <div style="height:20px;"></div>
-        To create a new thought record, click the bottom link or the top button "New".
+      <div style="margin-bottom:40px;">
+        <div style="padding:10px;padding-left:15px;padding-bottom:11px;border:1px solid #adb0b1;max-width:413px;background-color:#f1f1f2;border-radius:5px;color:#3c3c3c;">
+          <h1 style="letter-spacing:1px;margin-top:5px;font-size:25px;">CBT App</h1>
+          <div style="height:8px;"></div>
+          <span style="line-height:150%;font-size:19px;">
+          Cognitive Behavioral Therapy Online
+          </span>
+        </div>
+
+        <div style="height:30px;"></div>
+        To create a new thought record, click the link or the button "New".
       </div>
       
     </div>
@@ -24,33 +29,35 @@
     @card-update="cardUpdate" />
 
     <br>
-    <span class="link-basic"  @click.prevent="cardCreate">New</span> | <span class="link-basic" @click="cbtDeleteAll">Delete all</span> | <span @click="cbtExport" class="link-basic">Export</span> | <span @click="cbtImport" class="link-basic">Import</span>
+    <a class="link-basic"  @click.prevent="cardCreate">New</a> | <a class="link-basic" @click="cbtDeleteAll">Delete all</a> | <a @click="cbtExport" class="link-basic">Export</a> | <a @click="cbtImport" class="link-basic">Import</a>
     
     <div style="height:60px;"></div>
 
     <!-- <div style="border-top:1px solid grey;height:20px;"></div> -->
 
-    <div style="font-size:13px;padding:20px;padding-top:30px;background-color:#f1f1f2;border-radius:3px;border: 1px solid #bdbdbd;">
+    <div style="font-size:15px;padding:20px;padding-top:30px;background-color:#f1f1f2;border-radius:3px;border: 1px solid #bdbdbd;">
       <b>Quick Start</b>
       <br><br>
-      Create your first thought record by clicking on the New button. First, type your thought. Then identify the thinking errors and activate them by 
-      clicking on their circles. After that, rewrite each thinking error in a realistically positive and rational way. Finally, click the little red circle 
-      to mark the error as done (it becomes green).
+      Create a new thought record. First, type your thought. Then identify the thinking errors and select them by 
+      clicking on their circles. After that, rewrite each thinking error in a realistic and rational way. Finally, click the little red circle 
+      to mark the error as done.
       <br><br><br>
       <b>About</b>
       <br><br>
-      This CBT app is a digital version of the Cognitive Behavioral Therapy practice, based on the <a href="https://feelinggood.com/tag/daily-mood-log/" target="_blank">mood logging technique</a>, as described and popularized by Dr. David D. Burns.
+      This CBT app is a digital version of the Cognitive Behavioral Therapy practice, based on the <a href="https://feelinggood.com/tag/daily-mood-log/" target="_blank">mood logging technique</a>, as described and popularized by Dr. David D. Burns and Aaron T. Beck.
       <br><br>
-      Thoughts that you record in this app are private by design. The app is client-side and it never sends any information to the internet. 
+      Anything you record in this app is private by design. The app works client-side and it never sends any information over the internet. 
       Your notes are saved on your local device only, in the browser you are currently using. There are no accounts. If you delete the records, they are deleted permanently.
       <br><br>
-      Being a Progressive Web App (PWA), it is an offline-first app and can be <span @click="installPWA()" class="link">installed</span> on most mobile and desktop devices and used even without the internet.
+      Being a Progressive Web App (PWA), it is an offline-first app and can be <a @click="installPWA()">installed</a> on most mobile and desktop devices and used even without the internet.
       <br><br>
-      You can export your records, and import them later if you want to have them on a different computer, mobile device, or just in another browser. Export is also useful to keep 
-      an archive of your records in case you later want to review them. You can also share the exported records with your therapist for a review of your work or a consultation.
+      You can export your records, and import them later if you want to have them on a different computer, mobile device, or just in another browser. Export allows to keep 
+      records' archive or to share them with other people.
       <br><br>
       When you import notes from a backup, the existing records in the app (if any) are deleted 
-      and replaced with the new ones from the imported archive. So, if you want to work with multiple backup files, it's best to use a separate browser or an incognito window.
+      and replaced with the new ones from the imported archive. So, if you want to work with multiple backup files, you can use separate browsers, devices or work in incognito mode.
+      <br><br>
+      <router-link to="/about">Read more</router-link>
       <br><br>
     </div>
 

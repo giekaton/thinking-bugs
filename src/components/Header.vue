@@ -15,20 +15,20 @@
       </div>
 
       <!-- Right side -->
-      <router-link v-if="this.$route.name == 'CbtApp'" to="/">
-        <div class="app-button heading" style="width:34px;">
+      <span v-if="this.$route.name == 'CbtApp'" @click="exitCBT()">
+        <div class="app-button heading" style="width:34px;color:#325ea0;">
           ▷
         </div>
-      </router-link>
+      </span>
 
-      <router-link v-if="this.$route.name != 'CbtApp'" to="/cbt-app">
-        <div class="app-button heading" style="width:75px;font-weight:bold;" title="Cognitive Behavioral Therapy App">
+      <span @click="enterCBT()" v-if="this.$route.name != 'CbtApp'">
+        <div class="app-button heading" style="width:75px;font-weight:bold;color:#325ea0;" title="Cognitive Behavioral Therapy App">
           CBT App
         </div>
-      </router-link>
+      </span>
 
       <!-- New card -->
-      <div v-if="this.$route.name == 'CbtApp'" @click.prevent="cardCreate" class="app-button heading" title="New record" style="font-weight:bold;margin-right:15px;width:55px;">
+      <div v-if="this.$route.name == 'CbtApp'" @click.prevent="cardCreate" class="app-button heading" title="New record" style="color:#325ea0;font-weight:bold;margin-right:15px;width:55px;">
         New
       </div>
 
@@ -44,6 +44,7 @@
     data() {
       return {
         homePath: '/',
+        lastBug: '/',
         buttonContent: 'App'
       }
     },
@@ -68,7 +69,17 @@
         else {
           this.$router.push(this.homePath);
         }
+      },
+
+      enterCBT: function() {
+        this.lastBug = this.$route.path;
+        this.$router.push('/cbt-app');
+      },
+
+      exitCBT: function() {
+        this.$router.push(this.lastBug);
       }
+
     },
 
     mounted: function() {
@@ -96,7 +107,7 @@
 .app-button {
   height:30px;
   padding-top:4px;
-  border:1px solid #999999;
+  border:1px solid #adb0b1;
   border-radius:3px;
   width:45px;
   float:right;
@@ -109,7 +120,7 @@
 }
 
 .app-button:hover {
-  background-color:#f5f7ff;
+  background-color:#e7ecee;
 }
 
 .app-button:active {
@@ -133,7 +144,8 @@
   float:left;
   padding-left:10px;
   font-weight: bold;
-  margin-top:1px;
+  margin-top:2px;
+  letter-spacing: 0.5px;
 }
 
 .logo-icon {
@@ -172,8 +184,8 @@
 
 @media only screen and (max-width: 600px) {
   .header {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -184,64 +196,5 @@
   background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
 }
 
-/* Animated HAMBURGER menu */
-
-.menu-wrapper {
-  position: relative;
-  float: right;
-  width: 24px;
-  top: 5px;
-  height: 40px;
-  cursor: pointer;
-}
-
-.hamburger-menu,
-.hamburger-menu:after,
-.hamburger-menu:before {
-  width: 24px;
-  height: 3px;
-}
-
-.hamburger-menu {
-  position: relative;
-  transform: translateY(25px);
-  background: #757575;
-  transition: all 0ms 150ms;
-}
-.hamburger-menu.animate {
-  background: #F1F1F2;
-}
-
-.hamburger-menu:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 8px;
-  background: #757575;
-  transition: bottom 150ms 150ms cubic-bezier(0.23, 1, 0.32, 1), transform 150ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.hamburger-menu:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 8px;
-  background: #757575;
-  transition: top 150ms 150ms cubic-bezier(0.23, 1, 0.32, 1), transform 150ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.hamburger-menu.animate:after {
-  top: 0;
-  transform: rotate(45deg);
-  transition: top 150ms cubic-bezier(0.23, 1, 0.32, 1), transform 150ms 150ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.hamburger-menu.animate:before {
-  bottom: 0;
-  transform: rotate(-45deg);
-  transition: bottom 150ms cubic-bezier(0.23, 1, 0.32, 1), transform 150ms 150ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-/* End of animated HAMBURGER menu */
 
 </style>

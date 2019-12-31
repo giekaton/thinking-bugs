@@ -6,15 +6,15 @@
     <div>
       <h3>You use “shoulds,” “shouldn’ts,” “musts,” “oughts,” and “have tos”.</h3>
 
-      <p>When we engage in the Should Statements cognitive distortion, we think that we know the universal rules, and we insist that things should follow them.</p>
-
-      <p>Should statements can be directed at other people, or at oneself. It can also be directed at non-human objects, e.g. “It shouldn’t rain today. This is not right!”</p>
-
       <h4>Example</h4>
 
       <p>Alice got angry because she couldn’t use new software efficiently. She was becoming more and more anxious and frustrated, stuck in her internal dialog: “This should have not happened to me, it’s not fair. This software must work instantly as the old one did.”</p>
 
-      <h4>Why is this a thinking error?</h4>
+      <h4>Explained</h4>
+
+      <p>When we engage in the Should Statements cognitive distortion, we think that we know the universal rules, and we insist that things should follow them.</p>
+
+      <p>Should statements can be directed at other people, or at oneself. It can also be directed at non-human objects, e.g. “It shouldn’t rain today. This is not right!”</p>
 
       <p>There are good should statement, e.g. it is not allowed to steal, and we cross the street only when the green light is on. These statements help us to organize society.</p>
 
@@ -22,7 +22,7 @@
 
       <p>The distorted thoughts are often subjective and specific to a particular individual or group of individuals.</p>
 
-      <h4>How to fix it?</h4>
+      <h4>How to fix it</h4>
 
       <p>
         Write the dysfunctional thought in the

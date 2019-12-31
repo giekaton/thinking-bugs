@@ -4,6 +4,8 @@ const PrerenderSPAPlugin = require('prerender-spa-plugin')
 // vue.config.js
 module.exports = {
   configureWebpack: {
+
+
     plugins: [
       new PrerenderSPAPlugin({
 
@@ -15,6 +17,8 @@ module.exports = {
 
       })
     ]
+
+
   },
 
 }

@@ -4,6 +4,12 @@
     <div>
       <h3>You reason from your feelings: “I feel like an idiot, so I must be one.”</h3>
 
+      <h4>Example</h4>
+
+      <p>After a hard day at work, Bob came home and got into a conflict with his children. There was no reason for the conflict, Bob just felt bad after the hard day at work, and wanted to do something about it.</p>
+
+      <h4>Explained</h4>
+
       <p>This is a very unique thinking error, and an interesting phenomenon to explore. It connects the feeling with the thought.</p>
 
       <p>A person feels bad, and as a consequence thinks bad. This thinking then amplifies the feeling.</p>
@@ -26,15 +32,9 @@
         >Claire Weekes</a>.
       </p>
 
-      <h4>Example</h4>
-
-      <p>After a hard day at work, Bob came home and got into a conflict with his children. There was no reason for the conflict, Bob just felt bad after the hard day at work, and wanted to do something about it.</p>
-
-      <h4>Why is this a thinking error?</h4>
-
       <p>The emotional discomfort creates the urge to act. Such action is often unnecessary and harmful, especially when it arises not from the situation at hand but from some internal conflict, or previous experiences.</p>
 
-      <h4>How to fix it?</h4>
+      <h4>How to fix it</h4>
 
       <p>
         First of all, it is important to challenge the thought using the

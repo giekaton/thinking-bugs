@@ -23,8 +23,8 @@ npm run build
 
 ## Todo
 
-- Update/improve content
+- Update/improve content (60% done, contributions are welcome)
 - ~~Remove the current Wordpress backend, and make everything client-side only, Vue.js based~~
 - ~~Make it an offline-first PWA~~
-- Create E2EE sync
-- UI, UX polishing
+- Update/improve UI/UX
+- E2EE sync
