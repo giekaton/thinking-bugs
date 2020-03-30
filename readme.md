@@ -1,4 +1,4 @@
-# Thinking Errors and the CBT App
+# Thinking errors list and the CBT app
 
 Client side, offline-first. Early beta version!
 
@@ -23,8 +23,8 @@ npm run build
 
 ## Todo
 
-- Update/improve content (60% done, contributions are welcome)
+- Update/improve content (80% done, contributions are welcome)
 - ~~Remove the current Wordpress backend, and make everything client-side only, Vue.js based~~
 - ~~Make it an offline-first PWA~~
-- Update/improve UI/UX
+- ~~Update/improve UI/UX~~
 - E2EE sync

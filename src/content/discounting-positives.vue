@@ -14,38 +14,40 @@
 
     <p>This is often an automatic mind pattern when a person blindly criticizes him or herself without taking into account the positive side of things.</p>
 
-    <p>It is similar to Mental Filter thinking error but has a subtle difference. When engaged in Mental Filtering, a person is not aware of the positives. In the case of Discounting Positives, a person sees the positives but actively rejects or devalues them.</p>
+    <p>It is similar to the Mental Filter thinking error but has a subtle difference. With the Mental Filter, a person is not aware of the positives. In the case of the Discounting Positives, a person sees the positives but actively rejects or devalues them.</p>
 
-    <p>Most often it is a general thinking habit. It's an automatic mind pattern that influences all aspects of a person’s life.</p>
+    <p>Most often it is a general thinking habit. It's an automatic mind pattern that influences all aspects of a person's life.</p>
 
-    <p>It can come from a subconscious negative self-image. To continue identifying with it, a person doesn’t even consider the possibility of finding positives.</p>
+    <p>It can come from a subconscious negative self-image. To continue identifying with it (and staying in the comfort zone), a person doesn't even consider the possibility of finding positives.</p>
 
-    <p>This subconscious error can have a tremendous effect on our lives. When it is attached to our self-image, it limits us significantly in our careers and personal lives and paves the way for other problems and dysfunctions.</p>
+    <p>When the Discounting Positives cognitive distortion is attached to our self-image, it significantly limits us in our careers and personal lives.</p>
 
     <h4>
       How to fix it
     </h4>
 
-    
+    <p>
+      You can fix your thinking bugs with the help of the classical Cognitive Behavioral Therapy. Here, it is presented in a digital format, as the <a href="https://thinkingbugs.com/cbt-app" target="_blank">CBT app</a>.
+    </p>
+
+    <p>
+      Record the negative thought in the CBT app. Then identify the Discounting Positives bug. Finally, rewrite the thought more realistically, considering other possible interpretations of the situation.
+    </p>
+
+
+    <div class="content-contribution content-quickstart">
       <p>
-        You can fix your thinking bugs by using the classical technique of Cognitive Behavioral Therapy. Here, it is digitized into the <a href="https://thinkingbugs.com/cbt-app" target="_blank">CBT App</a>.
+        <b>Contribute</b>
       </p>
 
       <p>
-        The thought needs to be written down in the thought record using the mood logging technique, then challenged and rewritten in a rational, and realistically positive way.
+        The aim of the Thinking Bugs is to present the information about cognitive distortions objectively, comprehensively, impartially, and in a simple and easy to understand way.
       </p>
 
       <p>
-        This technique doesn't work if you keep thoughts in the head. The thought needs to be written down in the thought record and then challenged, by spotting and fixing the thinking errors.
+        If you see how the information on this page can be made better, you are welcome to contribute on <a href="https://github.com/giekaton/thinking-bugs/blob/master/src/content/" target="_blank">GitHub</a> or by contacting us at &#x66;e&#x65;&#100;&#x62;&#x61;c&#x6b;&#64;&#x74;&#x68;i&#x6e;&#107;&#x69;&#x6e;g&#x62;&#117;&#x67;&#x73;&#46;&#x63;&#111;&#x6d;.
       </p>
-
-      <p>
-        After the errors in a written thought are found, they need to be challenged one by one. The distorted thought needs to be rewritten in a new way for each cognitive distortion. Then the bug can be marked as fixed.
-      </p>
-
-      <p>
-        Write the dysfunctional thought in the <a href="https://thinkingbugs.com/cbt-app" target="_blank">CBT mood logging app</a>. Identify the Discounting Positives thinking bug. Then rewrite the thought more realistically, considering other possible interpretations of the situation.
-      </p>
+    </div>
 
   </div>
 </template>

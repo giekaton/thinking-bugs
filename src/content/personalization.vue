@@ -10,45 +10,48 @@
         <strong>Example</strong>
       </h4>
 
-      <p>Alice caught an angry look from the supermarket's cashier, and started believing the thought that she did something wrong. Actually, the cashier was having a bad day, and was angry at everyone.</p>
+      <p>Alice caught an angry look from the supermarket's cashier, and started believing the thought that she did something wrong. Actually, the cashier was having a bad day and was angry at everyone.</p>
 
       <h4>Explained</h4>
 
-      <p>This thinking error occurs when the person thinks that he or she is somehow related to some negative or irrelevant events or bears responsibiltiy for them, when this is actually not the case.</p>
+      <p>This thinking error occurs when a person thinks that he or she is somehow related to some negative or irrelevant events or bears responsibility for them, when this is actually not the case.</p>
 
-      <p>Through the error of Personalization, a lot of negative thought patterns can develop. It’s like an entry point for the negative storyline.</p>
+      <p>Through the error of Personalization, a lot of negative thought patterns can develop. It’s like an entry point for a negative storyline.</p>
 
-      <p>A person can associate some outer event with the internal negative thought pattern about him or herself and then build other concepts based on this thinking error.</p>
+      <p>With the Personalization thinking bug, a person can associate some irrelevant outer event with something personal, and then build other concepts based on the initial misconception.</p>
 
-      <p>The outer event doesn’t even need to be negative. It can be first Personalized and then to make it negative, other thinking errors can be added on top.</p>
+      <p>The outer event doesn’t even have to be negative. It can be first personalized and then to make it negative other thinking errors can be added on top.</p>
 
-      <p>This thining error comes from our early childhood. A child thinks that he is the center of the world, and if things happen (e.g. the mother is sad or happy), the child thinks that it is he or she who is responsible for the monther's mood.</p>
+      <p>Psychologists suggest that the thinking error of Personalization develops in early childhood. A child thinks that he is the center of the world, and if things happen, e.g. the mother is sad or happy, the child thinks that it is he or she who is responsible for the monther's mood.</p>
     
-      <p>On the flip side, Personalization can also be a positive distortion. When it's positive, it create a pompous and inadequate character that attaches events to his or her personality and interprets everything in an irrationally positive way.</p>
+      <p>On the flip side, Personalization can also be an unrealistically positive distortion. When it's positive, it creates a pompous character that selectively attaches events to his or her personality and interprets everything in an irrationally positive way.</p>
 
       <h4>
         How to fix it
       </h4>
 
       <p>
-        You can fix your thinking bugs by using the classical technique of Cognitive Behavioral Therapy. Here, it is digitized into the <a href="https://thinkingbugs.com/cbt-app" target="_blank">CBT App</a>.
+        You can fix your thinking bugs with the help of the classical Cognitive Behavioral Therapy. Here, it is presented in a digital format, as the <a href="https://thinkingbugs.com/cbt-app" target="_blank">CBT app</a>.
       </p>
 
       <p>
-        The thought needs to be written down in the thought record using the mood logging technique, then challenged and rewritten in a rational, and realistically positive way.
+        Record the negative thought in the CBT app. Then identify the Personalization bug. Finally, rewrite the thought more realistically, considering other possible interpretations of the situation.
       </p>
 
-      <p>
-        This technique doesn't work if you keep thoughts in the head. The thought needs to be written down in the thought record and then challenged, by spotting and fixing the thinking errors.
-      </p>
+      
+      <div class="content-contribution content-quickstart">
+        <p>
+          <b>Contribute</b>
+        </p>
 
-      <p>
-        After the errors in a written thought are found, they need to be challenged one by one. The distorted thought needs to be rewritten in a new way for each cognitive distortion. Then the bug can be marked as fixed.
-      </p>
+        <p>
+          The aim of the Thinking Bugs is to present the information about cognitive distortions objectively, comprehensively, impartially, and in a simple and easy to understand way.
+        </p>
 
-      <p>
-        Write the dysfunctional thought in the <a href="https://thinkingbugs.com/cbt-app" target="_blank">CBT thought record</a>. Identify the Personalization thinking bug. Then rewrite the thought more realistically, considering other possible interpretations of the situation.
-      </p>
+        <p>
+          If you see how the information on this page can be made better, you are welcome to contribute on <a href="https://github.com/giekaton/thinking-bugs/blob/master/src/content/" target="_blank">GitHub</a> or by contacting us at &#x66;e&#x65;&#100;&#x62;&#x61;c&#x6b;&#64;&#x74;&#x68;i&#x6e;&#107;&#x69;&#x6e;g&#x62;&#117;&#x67;&#x73;&#46;&#x63;&#111;&#x6d;.
+        </p>
+      </div>
 
     </div>
   </div>

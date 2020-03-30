@@ -11,12 +11,13 @@
         </svg>
       </div>
 
-      <resizable-textarea>
+      <resizable-textarea >
         <textarea 
           v-bind:id="'card-'+id" 
           v-bind:value="note" 
           @input="cardUpdate"
           placeholder="Type your thought"
+          class="textarea-cbt-record-thought"
         >
         </textarea>
       </resizable-textarea>
@@ -25,7 +26,7 @@
     
     <div class="card-errors">
       <div v-for="error in errors" v-bind:key="error.short">
-        <div class="icon-errors icon-div-card-errors-off" v-bind:class="{ 'icon-div-card-errors': error.is }" @click="errorSwitch(error.short)" v-bind:title="error.full">
+        <div class="icon-errors icon-div-card-errors-off" v-bind:class="{ 'icon-div-card-errors': error.is, 'record-error-fixed-circle': error.fixed }" @click="errorSwitch(error.short)" v-bind:title="error.full">
           {{ error.short }}
         </div>
       </div>
@@ -44,6 +45,7 @@
             v-bind:value="error.text" 
             @input="cardUpdateFixed"
             placeholder="Rewrite the thought in a positive and rational way"
+            class="textarea-cbt-record-bug"
           >
           </textarea>
         </resizable-textarea>
@@ -105,7 +107,7 @@ export default {
 
       console.log(this.errors[el]);
 
-      this.errors[el].is = !this.errors[el].is
+      this.errors[el].is = !this.errors[el].is;
 
       dexie.notes.update(this.id, {errors: this.errors, edit: Date.now()})
       .catch(e => {console.log('7', e)} );
@@ -134,11 +136,11 @@ export default {
 }
 
 .mini {
-  height:39px!important;
+  height: 39px!important;
 }
 
 .card {
-  border: 1px solid #b6b6b6;
+  border: 1px solid var(--border);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   margin-bottom: 0px;
@@ -150,15 +152,16 @@ export default {
 }
 
 .card-errors {
-  border: 1px solid #b6b6b6;
+  border: 1px solid var(--border);
   border-top: 0px;
-  min-height:35px;
+  min-height:37px;
   padding: 5px;
 }
 
-@media only screen and (max-width: 470px)  {
+@media only screen and (max-width: 500px)  {
   .card-errors {
-    min-height:70px;
+    min-height:74px;
+    padding-bottom:7px;
   }
   .icon-errors {
     margin-top: 3px;
@@ -167,7 +170,7 @@ export default {
 }
 
 .card-errors-selected {
-  border: 1px solid #b6b6b6;
+  border: 1px solid var(--border);
   border-top: 0px;
   min-height:35px;
   padding: 5px;
@@ -183,6 +186,7 @@ export default {
 }
 
 .card-move {
+  fill:var(--card-move-fill);
   box-sizing: content-box;
   cursor: pointer;
   position: absolute;
@@ -210,11 +214,13 @@ textarea {
   box-sizing: border-box;
   outline: none;
   resize: vertical;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: var(--textarea-font);
   /* font-family: 'Source Sans Pro', sans-serif; */
   font-size: 15px;
   overflow: hidden!important;
   resize: none;
+  background-color: transparent!important;
+  color: var(--textarea-color);
 }
 
 @media only screen and (max-width: 630px) {
@@ -237,18 +243,18 @@ textarea {
 }
 
 .icon-div-card-errors {
-  background-color:#ffdada!important;
+  background-color: #ffdada!important;
   border: 1px solid rgb(255, 170, 170)!important;
 }
 
 .icon-div-card-errors-extra {
-  background-color:#daf0ff!important;
+  background-color: #daf0ff!important;
   border: 1px solid #a4c9c2!important;
 }
 
 .icon-div-card-errors-off {
-  background-color:#e2e2e2;
-  border: 1px solid rgb(199, 199, 199);
+  background-color:var(--bug-off-bg);
+  border: 1px solid var(--bug-off-border);
   margin-right:5px;
   text-align: center;
   font-size:11px;
@@ -257,6 +263,11 @@ textarea {
   width:25px;
   height:25px;
   border-radius:50%;
+  color:black;
+  display: inline-table;
+  padding:2px;
+  padding-left:3px;
+  padding-right:3px;
 }
 
 .circle {
@@ -280,10 +291,16 @@ textarea {
 .error-title {
   float:left;
   text-decoration: underline;
+  font-family: var(--error-title);
+}
+
+.record-error-fixed-circle {
+  background-color: var(--record-error-fixed-circle-bg)!important;
+  border: 1px solid var(--record-error-fixed-circle-border)!important;
 }
 
 .error-title-grey {
-  color: #b4b4b4;
+  color: var(--error-title-grey);
 }
 
 </style>

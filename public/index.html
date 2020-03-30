@@ -20,7 +20,7 @@
     <meta property="og:image" content="https://thinkingbugs.com/img/open-graph.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:description" content="The classical thinking errors, cognitive distortions list and the app to practice cognitive behavioral therapy (CBT)" />
+    <meta property="og:description" content="The classical CBT cognitive distortions list and the CBT app to practice cognitive behavioral therapy online." />
 
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
 
@@ -32,17 +32,16 @@
       });
     </script>
 
-
-    <script src="https://npmcdn.com/dexie@2.0.4/dist/dexie.min.js"></script>
-
+    <script src="/lib/dexie.min.js"></script>
 
     <script>
       dexie = null;
 
       // Declare Database
-      dexie = new Dexie("ThinkingErrors");
+      dexie = new Dexie("ThinkingBugs");
       dexie.version(1).stores({
         notes: "++id,errors,text,edit",
+        props: "prop_name,prop_value",
       });
     </script>
 
@@ -55,8 +54,6 @@
 
       gtag('config', 'UA-57930548-59');
     </script>
-
-
 
   </head>
   <body>

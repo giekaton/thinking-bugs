@@ -17,40 +17,42 @@
         <p>A person doing this error is not seeing the positive aspects of the situation and instead is concentrating only on the negatives.</p>
 
         <p>
-          When the Mental Filter is in action, it is also accompanied by the phenomenon of
-          selective attention. It narrows the worldview, concentrating on the negative things or events, or interpreting neutral things as negative.
+          When the Mental Filter is in action, it is also accompanied by the phenomenon of selective attention. It narrows the worldview, concentrating on the negative things or events, or interpreting neutral things as negative.
         </p>
 
         <p>For some people, mental filtering is a character quality, linked to the person’s identity. After practicing CBT journaling technique with different situations, the thinking error of mental filtering can be changed to a more healthy and positive worldview.</p>
 
-        <p>Cognitive distortions can be both positive and negative. When the Mental Filter is positive, it creates inadequately positive expectations, that are unrealistic, and finally conclude to negative results. As the saying goes, it is “seeing things through the rose-tinted glasses”.</p>
+        <p>Cognitive distortions can be both positive and negative. When the Mental Filter is irrationally positive, it creates inadequately positive expectations. As they are unrealistic, they finally conclude to negative results. The metaphor for this is “seeing things through the rose-tinted glasses”.</p>
 
-        <p>The Mental Filter creates an irrational worldview which is not adequate or realistic because it goes through an artificial mental tendency to shape things in one way or another.</p>
+        <p>The Mental Filter creates an irrational worldview that is not adequate or realistic because it goes through an artificial mental tendency to shape things in one way or another.</p>
 
-        <p>In some cases, it can work and can be practiced intentionally. For example, there is a phrase “fake it until you make it”. But if a person is suffering from automatic mental filtering, first there is a need to regain freedom and control over it. Then it can be used in new creative and practically applicable ways.</p>
+        <p>In some cases, this can work and can be practiced intentionally. For example, there is the phrase “fake it until you make it”. But if a person is suffering from automatic mental filtering, first there is a need to regain freedom and control over it. Then it may be used in new creative and practically applicable ways.</p>
 
         <h4>How to fix it</h4>
-        
+
         <p>
-          You can fix your thinking bugs by using the classical technique of Cognitive Behavior Therapy. Here, it is digitized into the <a href="https://thinkingbugs.com/cbt-app" target="_blank">CBT App</a>.
+          You can fix your thinking bugs with the help of the classical Cognitive Behavioral Therapy. Here, it is presented in a digital format, as the <a href="https://thinkingbugs.com/cbt-app" target="_blank">CBT app</a>.
         </p>
 
         <p>
-          The thought needs to be written down in the thought record using the mood logging technique, then challenged and rewritten in a rational, and realistically positive way.
-        </p>
-
-        <p>
-          This technique doesn't work if you keep thoughts in the head. The thought needs to be written down in the thought record and then challenged, by spotting and fixing the thinking errors.
-        </p>
-
-        <p>
-          After the errors in a written thought are found, they need to be challenged one by one. The distorted thought needs to be rewritten in a new way for each cognitive distortion. Then the bug can be marked as fixed.
-        </p>
-
-        <p>
-          Write the dysfunctional thought in the <a href="https://thinkingbugs.com/cbt-app" target="_blank">CBT mood logging app</a>. Identify the Mental Filter thinking bug. In what ways are you magnifying or minifying things? Then rewrite the thought more realistically, considering other possible aspects of the situation.
+          Record the negative thought in the CBT app. Then identify the Mental Filter bug. Finally, rewrite the thought more realistically, considering other possible interpretations of the situation.
         </p>
         
+
+        <div class="content-contribution content-quickstart">
+          <p>
+            <b>Contribute</b>
+          </p>
+
+          <p>
+            The aim of the Thinking Bugs is to present the information about cognitive distortions objectively, comprehensively, impartially, and in a simple and easy to understand way.
+          </p>
+
+          <p>
+            If you see how the information on this page can be made better, you are welcome to contribute on <a href="https://github.com/giekaton/thinking-bugs/blob/master/src/content/" target="_blank">GitHub</a> or by contacting us at &#x66;e&#x65;&#100;&#x62;&#x61;c&#x6b;&#64;&#x74;&#x68;i&#x6e;&#107;&#x69;&#x6e;g&#x62;&#117;&#x67;&#x73;&#46;&#x63;&#111;&#x6d;.
+          </p>
+        </div>
+
       </div>
     </div>
 </template>

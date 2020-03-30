@@ -14,47 +14,41 @@
 
       <h4>Explained</h4>
 
-      <p>Humans develop their self-image early in life, and some people see themselves as in one or another way faulty, not because of objective reasons, but because it’s their self-concept.</p>
+      <p>Humans develop their self-image early in life, and some people learn to see themselves as faulty or bad. Not because of objective reasons, but because it’s their self-concept.</p>
 
-      <p>The thinking error of Self Blame points to this habitual thinking pattern, gives it a name and allows it to be spotted more easily.</p>
+      <p>The thinking error of the Self Blame points to this habitual thinking pattern, gives it a name and allows it to be spotted more easily.</p>
 
-      <p>There can be many reasons why things happen in life. It is irrational to assume that the first one to blame is always “me”. Maybe the other person has issues, or the whole situation is wrong and unhealthy.</p>
+      <p>There can be many reasons why things happen in life. It is irrational to assume that the first one to blame is always “me”. Maybe the other person has issues, or the whole situation is in some ways wrong.</p>
 
-      <p>For an individual doing this error, it is important to understand that it is not always he or her who is bad, even though someone may want to position the situation that way.</p>
+      <p>For an individual doing this error, it is important to understand that it is not always he or her who is bad.</p>
 
-      <p>For the individual, it is important to acknowledge that other people and situations can be bad too. For people with self-blame tendencies, this can be hard to do, and they can be manipulated by others, who operate using fear.</p>
+      <p>For the individual, it is important to acknowledge that other people and situations can be bad too. For people with self-blame tendencies, this can be hard to do, and they can be manipulated by others, who compete using the <a href="/other-blame" target="_blank">Other Blame</a> strategies.</p>
 
-      <p>
-        But again, don’t hurry to put all blame on the environment because the
-        <a
-          href="https://thinkingbugs.com/other-blame"
-          target="_blank"
-          rel="noreferrer noopener"
-          aria-label="Other Blame (opens in a new tab)"
-        >Other Blame</a> is yet another thinking error.
-      </p>
 
       <h4>How to fix it</h4>
 
       <p>
-        You can fix your thinking bugs by using the classical technique of Cognitive Behavioral Therapy. Here, it is digitized into the <a href="https://thinkingbugs.com/cbt-app" target="_blank">CBT App</a>.
+        You can fix your thinking bugs with the help of the classical Cognitive Behavioral Therapy. Here, it is presented in a digital format, as the <a href="https://thinkingbugs.com/cbt-app" target="_blank">CBT app</a>.
       </p>
 
       <p>
-        The thought needs to be written down in the thought record using the mood logging technique, then challenged and rewritten in a rational, and realistically positive way.
+        Record the negative thought in the CBT app. Then identify the Self Blame bug. Finally, rewrite the thought more realistically, considering other possible interpretations of the situation.
       </p>
 
-      <p>
-        This technique doesn't work if you keep thoughts in the head. The thought needs to be written down in the thought record and then challenged, by spotting and fixing the thinking errors.
-      </p>
+      
+      <div class="content-contribution content-quickstart">
+        <p>
+          <b>Contribute</b>
+        </p>
 
-      <p>
-        After the errors in a written thought are found, they need to be challenged one by one. The distorted thought needs to be rewritten in a new way for each cognitive distortion. Then the bug can be marked as fixed.
-      </p>
+        <p>
+          The aim of the Thinking Bugs is to present the information about cognitive distortions objectively, comprehensively, impartially, and in a simple and easy to understand way.
+        </p>
 
-      <p>
-        Write the dysfunctional thought in the <a href="https://thinkingbugs.com/cbt-app" target="_blank">CBT thought record</a>. Identify the Self Blame thinking bug. Then rewrite the thought more realistically, considering other possible interpretations of the situation.
-      </p>
+        <p>
+          If you see how the information on this page can be made better, you are welcome to contribute on <a href="https://github.com/giekaton/thinking-bugs/blob/master/src/content/" target="_blank">GitHub</a> or by contacting us at &#x66;e&#x65;&#100;&#x62;&#x61;c&#x6b;&#64;&#x74;&#x68;i&#x6e;&#107;&#x69;&#x6e;g&#x62;&#117;&#x67;&#x73;&#46;&#x63;&#111;&#x6d;.
+        </p>
+      </div>
 
     </div>
   </div>

@@ -2,31 +2,36 @@
   <div class="errors-list">
     <!-- Content -->
 
-    <span style="font-size:20px">
-      CBT Thinking Errors
+    <span style="font-size:20px;font-weight:bold;">
+      Welcome
     </span>
 
-    <h3 style="font-size:15px;margin-top:20px;" class="links-content">
-      <!-- Below are the classical cognitive distortions, as defined by the practice of Cognitive Behavioral Therapy (CBT). -->
-      <!-- Originally defined by Dr. David D. Burns for the practice of Cognitive Behavioral Therapy (CBT). -->
-
-      Cognitive Behavioral Therapy (CBT) is a scientific, well-tested and most proven logical approach for challenging distorted thoughts and transforming them from intrusive and unhelpful into realistic and beneficial.
+    <h3 style="font-size:15px;margin-top:30px;" class="links-content">
+      
+      Cognitive Behavioral Therapy (CBT) is a scientific, well-tested and most proven logical approach for challenging our distorted thoughts and transforming them from intrusive and unhelpful into realistic and beneficial.
 
       The irrational, unrealistic and often negative thoughts are common to different people. These thoughts are classified into different types, named together as cognitive distortions, also known as thinking errors or <a href="https://twitter.com/thinkingbugs/status/1182119140267569154" target="_blank">thinking bugs</a>.
 
-      By deconstructing and changing irrational thoughts, we can greatly improve our life quality, peformance, and general well-being. CBT is also efficient for know conditions such as anxiety, panic attacks, depression, OCD, ADHD and other disorders.
-
-      The list of classical cognitive distortions is presented below. These thinking bugs can be spotted in our mind patterns and fixed using the <router-link to="/cbt-app">CBT App</router-link>.
+      By deconstructing and changing our irrational thoughts, we can greatly improve our life quality, performance, general well-being and solve many psychological issues, such as anxiety, panic attacks, depression, OCD, PTSD, ADHD and similar. <router-link to="/about">Read more...</router-link>
 
       <br><br>
-      <router-link to="/about">About the Thinking Bugs</router-link>
+      The list of classical cognitive distortions is presented below. These thinking bugs can be spotted in our thought patterns and fixed using the <router-link to="/cbt-app">CBT App</router-link>.
+
+      <br><br>
+      
     </h3>
 
-    <div style="height:30px;"></div>
+    <div style="height:20px;"></div>
+
+    <span style="font-size:20px;font-weight:bold;">
+      CBT Thinking Errors
+    </span>
+
+    <div style="height:50px;"></div>
 
     <div>
       
-      <div class="te-div bug-link">
+      <div class="te-div">
         <router-link to="/all-or-nothing-thinking">
           <div class="icon-div">
             AoN
@@ -37,16 +42,14 @@
             All or Nothing Thinking
           </router-link>
           <br>
-          <div class="bug-spacer"></div>
-          <div class="link-black">
+          <div style="height:5px;"></div>
+          <span class="small">
             You look at things in absolute, black-and-white categories.
-          </div>
+          </span>
         </div>
       </div>
       
-          
-
-      <div class="te-div bug-link">
+      <div class="te-div">
         <router-link to="/magnification-or-minimization">
           <div class="icon-div">
             MoM
@@ -58,13 +61,13 @@
           </router-link>
           <br>
           <div style="height:5px;"></div>
-          <span class="link-black">
+          <span class="small">
             You blow things way out of proportion or shrink them.
           </span>
         </div>
       </div>
 
-      <div class="te-div bug-link">
+      <div class="te-div">
         <router-link to="/mental-filter">
           <div class="icon-div">
             MF
@@ -76,7 +79,7 @@
           </router-link>
           <br>
           <div style="height:5px;"></div>
-          <span class="link-black">
+          <span class="small">
             You dwell on the negatives and ignore the positives.
           </span>
         </div>
@@ -94,7 +97,7 @@
           </router-link>
           <br>
           <div style="height:5px;"></div>
-          <span class="link-black">
+          <span class="small">
             You insist your positive qualities don't count.
           </span>
         </div>
@@ -295,7 +298,7 @@
           <br>
           <div style="height:5px;"></div>
           <span class="small">
-            The Fallacy of Fairness, If Only..., Control Tendencies, etc.
+            Different types of irrational and unrealistic thinking.
           </span>
         </div>
       </div>
@@ -325,25 +328,5 @@ export default {
 
 
 <style>
-  a, a:visited, a:active, a:hover {
-    color:#467ed2;
-  }
 
-  /* a:hover, a:active {
-    text-decoration: underline;
-  } */
-
-  
-.link-black {
-  color: black;
-  text-decoration: none!important;
-}
-
-.link-black a:hover {
-  text-decoration: none!important;
-}
-
-.links-content a:hover {
-  text-decoration: underline;
-}
 </style>

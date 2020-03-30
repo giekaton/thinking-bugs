@@ -4,64 +4,105 @@
 
     <div v-if="digs.length == 0">
 
-      <div style="margin-bottom:40px;">
-        <div style="padding:10px;padding-left:15px;padding-bottom:11px;border:1px solid #adb0b1;max-width:413px;background-color:#f1f1f2;border-radius:5px;color:#3c3c3c;">
-          <h1 style="letter-spacing:1px;margin-top:5px;font-size:25px;">CBT App</h1>
-          <div style="height:8px;"></div>
-          <span style="line-height:150%;font-size:19px;">
-          Cognitive Behavioral Therapy Online
-          </span>
-        </div>
-
-        <div style="height:30px;"></div>
-        To create a new thought record, click the link or the button "New".
+      <div style="padding:10px;padding-left:15px;padding-bottom:11px;border-radius:5px;" class="content-quickstart" >
+        <h1 style="letter-spacing:1px;margin-top:5px;font-size:25px;">CBT App</h1>
+        <div style="height:8px;"></div>
+        <span style="line-height:150%;font-size:19px;">
+        Cognitive Behavioral Therapy Online
+        </span>
       </div>
-      
+      <div style="height:10px;"></div>
+      <div class="app-button-2" @click="loadExamples()">Example</div>
+
+      <div style="height:120px;"></div>
+
     </div>
 
     <cbt-record           
-    v-for="dig in digs" 
-    v-bind:key="dig.id" 
-    v-bind:note="dig.text"
-    v-bind:id="dig.id"
-    v-bind:errors="dig.errors"
-    @card-delete="cardDelete" 
-    @card-update="cardUpdate" />
+      v-for="dig in digs" 
+      v-bind:key="dig.id" 
+      v-bind:note="dig.text"
+      v-bind:id="dig.id"
+      v-bind:errors="dig.errors"
+      @card-delete="cardDelete" 
+      @card-update="cardUpdate" 
+    />
 
     <br>
-    <a class="link-basic"  @click.prevent="cardCreate">New</a> | <a class="link-basic" @click="cbtDeleteAll">Delete all</a> | <a @click="cbtExport" class="link-basic">Export</a> | <a @click="cbtImport" class="link-basic">Import</a>
     
-    <div style="height:60px;"></div>
+    <div style="float:left;display:inline-block;margin-top:-40px;">
+      <a @click.prevent="cardCreate">
+        <div class="app-button-2">New</div>
+      </a>
+      <a class="link-basic" @click="cbtDeleteAll">
+        <div class="app-button-2">Delete all</div>
+      </a>
+      <a @click="cbtExport" class="link-basic">
+        <div class="app-button-2">Export</div>
+      </a>
+      <a @click="cbtImport" class="link-basic">
+        <div class="app-button-2">Import</div>
+      </a>
+    </div>
+    
+    <div style="clear:both;height:50px;"></div>
 
-    <!-- <div style="border-top:1px solid grey;height:20px;"></div> -->
+    <div class="content-quickstart" style="font-size:15px;padding:20px;padding-top:30px;border-radius:3px;">
 
-    <div style="font-size:15px;padding:20px;padding-top:30px;background-color:#f1f1f2;border-radius:3px;border: 1px solid #bdbdbd;">
-      <b>Quick Start</b>
-      <br><br>
-      Create a new thought record. First, type your thought. Then identify the thinking errors and select them by 
-      clicking on their circles. After that, rewrite each thinking error in a realistic and rational way. Finally, click the little red circle 
-      to mark the error as done.
-      <br><br><br>
-      <b>About</b>
-      <br><br>
-      This CBT app is a digital version of the Cognitive Behavioral Therapy practice, based on the <a href="https://feelinggood.com/tag/daily-mood-log/" target="_blank">mood logging technique</a>, as described and popularized by Dr. David D. Burns and Aaron T. Beck.
-      <br><br>
-      Anything you record in this app is private by design. The app works client-side and it never sends any information over the internet. 
-      Your notes are saved on your local device only, in the browser you are currently using. There are no accounts. If you delete the records, they are deleted permanently.
-      <br><br>
-      Being a Progressive Web App (PWA), it is an offline-first app and can be <a @click="installPWA()">installed</a> on most mobile and desktop devices and used even without the internet.
-      <br><br>
-      You can export your records, and import them later if you want to have them on a different computer, mobile device, or just in another browser. Export allows to keep 
-      records' archive or to share them with other people.
-      <br><br>
-      When you import notes from a backup, the existing records in the app (if any) are deleted 
-      and replaced with the new ones from the imported archive. So, if you want to work with multiple backup files, you can use separate browsers, devices or work in incognito mode.
-      <br><br>
-      <router-link to="/about">Read more</router-link>
-      <br><br>
+      <p>
+        <b>Quick start</b>
+      </p>
+
+      <p>
+        Create a new thought record. First, type your thought. Then identify the thinking errors and select them by 
+        clicking on their circles. After that, rewrite each thinking error in a realistic and rational way. Finally, click the error's red circle 
+        to turn it green and mark the error as fixed.
+      </p>
+
+      <p>
+        This technique does not work if you keep your thoughts in the head. The thought needs to be written down and then challenged by spotting and fixing cognitive distortions.
+      </p>
+
+      <p>
+        When you identify the cognitive distortions in your though, these thinking bugs need to be challenged one by one. Each thinking error needs to be rewritten in a new, rational and realistically positive way. Then it can be marked as fixed.
+      </p>
+
+      <br>
+
+      <p><b>More info</b></p>
+      
+      <p>The Thinking Bugs CBT App is an <a href="https://github.com/giekaton/thinking-bugs" target="_blank">open-source</a> digital version of the classical Cognitive Behavioral Therapy practice, based on the <a href="https://feelinggood.com/tag/daily-mood-log/" target="_blank">mood logging technique</a>, as described and popularized by <a href="https://en.wikipedia.org/wiki/David_D._Burns" target="_blank">David D. Burns</a> and <a href="https://en.wikipedia.org/wiki/Aaron_T._Beck" target="_blank">Aaron T. Beck</a>.</p>
+
+      <p>This CBT app is privacy-focused by design. It works "client-side" which means that private information (e.g. thought records) never leaves the user's local device. The app works in an offline mode by default and the data is never sent over the internet.</p>
+      
+      <p>
+        Being a progressive web app (PWA), it can be <a @click="installPWA()">installed</a> on most mobile and desktop devices and used even without the internet.
+      </p>
+
+      <br>
+
+      <p>
+        <b>Tips</b>
+      </p>
+
+      <p>
+        Your records are saved on your local device only, in the browser you are currently using. There are no accounts. If you delete your records, they are deleted permanently.
+      </p>
+
+      <p>
+        You can export your records, and import them later if you want to have them on a different computer, mobile device, or just in another browser. Export allows to keep 
+        records' archive or to share them with other people.
+      </p>
+
+      <p>
+        When you import records from a backup, the existing data in the app (if any) is deleted and replaced with new records from the imported archive. If you want to work with multiple backup files, you can use separate browsers, separate devices or work in incognito mode.
+      </p>
+      
+      <br>
+
     </div>
 
-    <div style="height:40px;"></div>
+    <div style="height:50px;"></div>
 
   </div>
 
@@ -86,6 +127,8 @@ export default {
 
   data: function() {
     return {
+      examples: [{"id":3,"errors":{"AoN":{"is":true,"title":"All or Nothing Thinking","full":"All or Nothing Thinking - You look at things in absolute, black-and-white categories.","short":"AoN","fixed":true,"text":"Actually, some of the apps did help me, and while I tried many of them, there are still many different promising approaches that I have not yet tried."},"MoM":{"is":false,"title":"Magnification or Minimization","full":"Magnification or Minimization - You blow things way out of proportion or shrink them.","short":"MoM","fixed":false,"text":""},"MF":{"is":true,"title":"Mental Filter","full":"Mental Filter - You dwell on the negatives and ignore the positives.","short":"MF","fixed":true,"text":"It's a bad idea to keep identifying with the thought that \"nothing can help, I tried it all\". This thought blocks me from experiencing new things. Maybe it also protects me from failures, but in order to experience life, I must accept the possibility of a failure."},"DP":{"is":false,"title":"Discounting Positives","full":"Discounting Positives - You insist your positive qualities don't count.","short":"DP","fixed":false,"text":""},"Lab":{"is":true,"title":"Labeling","full":"Labeling - Instead of saying, “I made a mistake,” you tell yourself, “I'm a jerk” or “I'm a loser.","short":"Lab","fixed":true,"text":"I should not label all self-help type of apps as \"bad\" or \"fake\", because I know for sure that many people get a lot of benefit from similar apps and methodologies."},"Per":{"is":true,"title":"Personalization","full":"Personalization - You consider negative or irrelevant events as having something to do with you.","short":"Per","fixed":true,"text":"I'm looking at this from my individual perspective. A person without previous similar negative app experience would be much more open-minded than I am now. Also, such a person would probably get better results from this app. Obviously, I can learn from this imaginable person a thing or two."},"MR":{"is":true,"title":"Mind Reading","full":"Mind Reading - You assume that people are reacting negatively to you.","short":"MR","fixed":true,"text":"I imagine that the creator of this app has dark motives, because why else he or she did create this app? This doesn't sound right, as I assume that all app creators are evil."},"FT":{"is":true,"title":"Fortune Telling","full":"Fortune Telling - You predict that things will turn out badly.","short":"FT","fixed":true,"text":"I'm predicting that the app experience will be bad, which is an unrealistic and irrational jump to the conclusion. Actually, the app experience can be either good or bad."},"Ovg":{"is":true,"title":"Overgeneralization","full":"Overgeneralization - You view a single negative event as a never-ending pattern of defeat.","short":"Ovg","fixed":true,"text":"I think that if I had a poor experience with previous apps, I will also have a similarly poor experience with all apps. That is just not true because in the world there are both good and bad apps, not only bad. That's a fact."},"SS":{"is":true,"title":"Should Statements","full":"Should Statements - You use “shoulds,” “shouldn'ts,” “musts,” “oughts,” and “have tos.”","short":"SS","fixed":true,"text":"I insist that my experience should be good. By avoiding any experience which can potentially be bad, I'm imposing my irrational rules upon reality, and by doing so, I avoid life. I need to see experiences the way they are and not how I'd like them to be. I can then accept or change them."},"SB":{"is":false,"title":"Self Blame","full":"Self Blame - You blame yourself for something you weren't entirely responsible for.","short":"SB","fixed":false,"text":""},"OB":{"is":true,"title":"Other Blame","full":"Other Blame - You blame others and overlook ways you contributed to the problem.","short":"OB","fixed":true,"text":"Well, ok. It is possible that some of the previous apps were promising, but I just didn't put the effort."},"ER":{"is":true,"title":"Emotional Reasoning","full":"Emotional Reasoning - You reason from your feelings: “I feel like an idiot, so I must be one.”","short":"ER","fixed":true,"text":"I often feel a slight fear and discomfort when faced with new things. I bet this contributes to my prejudice against similar apps, but actually has nothing to do with this particular app."},"Mag":{"is":true,"title":"Magical Thinking","full":"Magical Thinking - The Fallacy of Fairness, If Only, Control Tendencies etc.","short":"Mag","fixed":true,"text":"I admit that on some level I believe that the app should solve my problems almost in a magical way. I understand that the work needs to be done by every individual, and the app can only help and guide, but is not an effortless quick fix."}},"text":"This app is not worth my time because I already tried many of them, and none helped."}],
+
       cbtTutorial: true,
       digs: [],
       cardMoveDialogShow: false,
@@ -208,7 +251,7 @@ export default {
         'Mag': { 
           'is': false,
           'title': 'Magical Thinking',
-          'full': 'Magical Thinking - The Fallacy of Fairness, If Only, Control Tendencies etc.',
+          'full': 'Magical Thinking - Different types of irrational and unrealistic thinking.',
           'short': 'Mag',
           'fixed': false,
           'text': ''
@@ -226,13 +269,22 @@ export default {
 
 
   mounted: function() {
-    let self = this;
 
     // load notes from indexedDB
-    dexie.notes.toArray( function(notes) {      
-      notes.forEach ( note => {
-        console.log(note);
-        self.digs.unshift({id: note.id, errors: note.errors, text: note.text });
+    dexie.notes.toArray( notes => {      
+      notes.forEach ( (note, idx, array) => {
+        // console.log(note);
+        // self.digs.unshift({id: note.id, errors: note.errors, text: note.text });
+
+        this.digs.unshift({id: note.id, errors: note.errors, text: note.text });
+
+        // if (idx === array.length - 1) { 
+        //   // console.log("Last callback call at index " + idx + " with value " + note.id );
+        //   setTimeout(() => {
+        //     this.toTop();
+        //   }, 500);
+        // }
+
       });
     })
     .catch(e => {console.log('20', e)} );
@@ -258,6 +310,7 @@ export default {
       if (confirm('Are you sure you want to delete all data?')) {
         dexie.notes.clear();
         this.digs = [];
+        this.toTop();
       }
     },
 
@@ -405,10 +458,43 @@ export default {
       .catch(e => {console.log('errorFixed', e)} );
     },
 
+    loadExamples() {
+      dexie.notes.clear();
+      this.digs = [];
+
+      // let plainNotes = JSON.parse(this.examples);
+      let plainNotes = this.examples;
+      // console.log(plainNotes[0]);
+      // plainNotes = JSON.parse(plainNotes[0]);
+
+      let plainNotesArray = [];
+      let i = 0;
+      plainNotes.forEach ( note => {
+        plainNotesArray.push(note);
+        i++;
+        if (i == plainNotes.length) {
+          // update db
+          dexie.notes.bulkAdd( plainNotesArray )
+          .then(() => {
+            dexie.notes.toArray( (notes) => {      
+              notes.forEach ( note => {
+                console.log(note);
+                this.digs.unshift({id: note.id, errors: note.errors, text: note.text });
+              });
+              this.toTop();
+            })
+            .catch(e => {console.log('20', e)} );
+          })
+        }
+      });
+    },
+
     // utils
   
     toTop: function() {
       window.scrollTo(0,0);
+      // document.getElementById('scroll-to-top').scrollTop;
+      scrollTo(document.getElementById('scroll-to-top'), 0, 100);
     },
 
   },
@@ -538,6 +624,8 @@ export default {
   .icon-div-card-errors {
     background-color:#ffdada!important;
     border: 1px solid rgb(255, 170, 170)!important;
+  
+    color:#000!important;
   }
 
   .icon-div-card-errors-extra {
@@ -556,6 +644,7 @@ export default {
     width:25px;
     height:25px;
     border-radius:50%;
+    /* color:var(--icon-div-card-errors-off-color); */
   }
 
   .circle {

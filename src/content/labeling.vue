@@ -8,38 +8,42 @@
 
       <h4>Example</h4>
 
-      <p>From the early days, Alice saw herself as “bad” because in her childhood mother constantly repeated Alice that she is bad. Throughout her life, when thinking about herself as “bad”, Alice often experienced familiar states of depression, and it felt like a natural identity to her.</p>
+      <p>From the early days, Alice saw herself as “bad” because in her childhood mother constantly repeated Alice that she is bad. She became receptive to this label, and then other people in her life started to use this label (intentionally or not) to manipulate her. Throughout her life, when thinking about herself as “bad”, Alice often experienced states of depression, and it felt like a natural identity to her.</p>
 
       <h4>Explained</h4>
 
-      <p>Labeling is the type of thinking when we describe ourselves or other people by a single label, e.g., “I failed the exam, it means I’m a loser”. The label “loser” used here is an extreme form of overgeneralization and black and white thinking.</p>
+      <p>
+        Labeling is a cognitive distortion which appears in our thinking when we try describe ourselves or other people by a single label, e.g. “I failed the exam, it means I’m a loser”. Here, the label “loser” is an extreme form of the Overgeneralization and the Black and White Thinking.
+      </p>
 
-      <p>It is a thinking error because in reality things are never defined by a single label. Labeling is a cognitive distortion because it contradicts the generally known scientific truths about reality and physical laws.</p>
+      <p>Labeling is a thinking bug because in reality things are never defined by a single label. It is a cognitive distortion because it contradicts the generally known scientific truths and defies commonly understood laws of reality.</p>
+
 
       <h4>How to fix it</h4>
 
+      <p>
+        You can fix your thinking bugs with the help of the classical Cognitive Behavioral Therapy. Here, it is presented in a digital format, as the <a href="https://thinkingbugs.com/cbt-app" target="_blank">CBT app</a>.
+      </p>
+
+      <p>
+        Record the negative thought in the CBT app. Then identify the Labeling bug. Finally, rewrite the thought more realistically, considering other possible interpretations of the situation.
+      </p>
+
       
-      <p>
-        You can fix your thinking bugs by using the classical technique of Cognitive Behavioral Therapy. Here, it is digitized into the <a href="https://thinkingbugs.com/cbt-app" target="_blank">CBT App</a>.
-      </p>
+      <div class="content-contribution content-quickstart">
+        <p>
+          <b>Contribute</b>
+        </p>
 
-      <p>
-        The thought needs to be written down in the thought record using the mood logging technique, then challenged and rewritten in a rational, and realistically positive way.
-      </p>
+        <p>
+          The aim of the Thinking Bugs is to present the information about cognitive distortions objectively, comprehensively, impartially, and in a simple and easy to understand way.
+        </p>
 
-      <p>
-        This technique doesn't work if you keep thoughts in the head. The thought needs to be written down in the thought record and then challenged, by spotting and fixing the thinking errors.
-      </p>
+        <p>
+          If you see how the information on this page can be made better, you are welcome to contribute on <a href="https://github.com/giekaton/thinking-bugs/blob/master/src/content/" target="_blank">GitHub</a> or by contacting us at &#x66;e&#x65;&#100;&#x62;&#x61;c&#x6b;&#64;&#x74;&#x68;i&#x6e;&#107;&#x69;&#x6e;g&#x62;&#117;&#x67;&#x73;&#46;&#x63;&#111;&#x6d;.
+        </p>
+      </div>
 
-      <p>
-        After the errors in a written thought are found, they need to be challenged one by one. The distorted thought needs to be rewritten in a new way for each cognitive distortion. Then the bug can be marked as fixed.
-      </p>
-
-      <p>
-        Write the dysfunctional thought in the <a href="https://thinkingbugs.com/cbt-app" target="_blank">CBT thought record</a>. Identify the Labeling thinking bug. Then rewrite the thought more realistically, considering other possible interpretations of the situation.
-      </p>
-
-      <p>After understanding the mechanics of the Labeling thinking error, and working on her irrational thoughts with the CBT mood logging journal, Alice was able to detach herself from the narrow label “bad” and build a new and more balanced identity.</p>
     </div>
   </div>
 </template>

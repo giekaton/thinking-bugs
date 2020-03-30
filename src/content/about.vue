@@ -43,17 +43,13 @@
 
     <div style="width:240px;margin:0 auto;text-align: center;letter-spacing:2px;">🍂🐛🐛🌵🍂🐛🍂🌵</div>
 
-    <!-- <div style="height:15px;"></div>
-
-    <div style="max-width:400px;margin:0 auto;text-align: center;font-size:12px;line-height:100%;margin-top:15px;">Do you see a difference in the above emoji gardens?<br></div> -->
-
     <div style="height:65px;"></div>
 
     <p><b>Computer metaphor</b></p>  
 
     <p>Prominent artificial intelligence scientists believe that human intelligence (the "thinking" part) can be compared to an extremely powerful and sophisticated computer. Like any other computer, our thinking can also have bugs.</p>
     
-    <p>Because the computer metaphor is relevant and appropriate, in all thinking errors examples you will see the names <a href="https://en.wikipedia.org/wiki/Alice_and_Bob" target="_blank">Alice and Bob</a> - the fictional characters  traditionally used in cryptography to describe encrypted interactions.</p>
+    <p>Because the computer metaphor is relevant and appropriate, in all thinking error examples you will see the names <a href="https://en.wikipedia.org/wiki/Alice_and_Bob" target="_blank">Alice and Bob</a> - the fictional characters  traditionally used in cryptography to describe encrypted interactions.</p>
 
     <div style="height:25px;"></div>
 
@@ -62,16 +58,12 @@
     <div style="height:30px;"></div>
 
     <div style="width:240px;margin:0 auto;text-align: center;letter-spacing:2px;">💥🖥️💥🐛📁💥📁🐛🕸️</div>
-
-    <!-- <div style="height:15px;"></div>
-
-    <div style="height:45px;"></div> -->
     
     <div style="height:65px;"></div>
 
     <p><b>Gamification</b></p>  
 
-    <p>The app's intention is to make fixing bugs look like a fun thing, not a hard work. No doubt, it can be very hard to work with our thinking errors, face challenges, and practice new ways of thinking and living. There is no need to stress this "hard work" even more, but instead, better to make this process user friendly and gamified.</p>
+    <p>The app's intention is to make fixing bugs look like a fun thing, not hard work. No doubt, it can be very hard to work with our thinking errors, face challenges, and practice new ways of thinking and living. There is no need to stress this "hard work" even more, but instead, better to make this process user friendly and gamified.</p>
 
     <div style="height:25px;"></div>
 
@@ -83,7 +75,13 @@
 
     <div style="height:25px;"></div>
 
-    <p>Your feedback is always welcome and appreciated: &#104;&#x69;&#64;&#116;&#x68;i&#110;&#x6b;i&#110;&#x67;b&#117;&#x67;s&#46;&#x63;o&#109;</p>
+    <p><b>Contact</b></p>
+
+    <p>Contact us by email: &#104;&#x69;&#64;&#116;&#x68;i&#110;&#x6b;i&#110;&#x67;b&#117;&#x67;s&#46;&#x63;o&#109;</p>
+
+    <p>
+      Follow and fork on <a href="https://twitter.com/thinkingbugs" target="_blank">Twitter</a> and <a href="https://github.com/giekaton/thinking-bugs" target="_blank">GitHub</a>.
+    </p>
 
   </div>
 
@@ -91,15 +89,13 @@
 
 
 <script>
+  export default {
 
-export default {
-
-  methods: {
-    installPWA: function() {
-      window.deferredPrompt.prompt();
+    methods: {
+      installPWA: function() {
+        window.deferredPrompt.prompt();
+      }
     }
+
   }
-
-}
-
 </script>
