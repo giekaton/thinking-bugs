@@ -7,17 +7,17 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "core-js": "^2.6.5",
+    "core-js": "^2.6.11",
     "prerender-spa-plugin": "^3.4.0",
-    "register-service-worker": "^1.6.2",
-    "vue": "^2.6.10",
-    "vue-router": "^3.0.3"
+    "register-service-worker": "^1.7.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.6"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.10.0",
-    "@vue/cli-plugin-pwa": "^3.10.0",
-    "@vue/cli-service": "^3.10.0",
-    "vue-template-compiler": "^2.6.10"
+    "@vue/cli-plugin-babel": "^3.12.1",
+    "@vue/cli-plugin-pwa": "^3.12.1",
+    "@vue/cli-service": "^4.2.3",
+    "vue-template-compiler": "^2.6.11"
   },
   "postcss": {
     "plugins": {
