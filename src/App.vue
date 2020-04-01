@@ -59,23 +59,40 @@ export default {
     },
 
     themeSwitch: function() {
+      scrollTo(document.getElementById('scroll-to-top'), 0, 0);
       if (this.themeLight) {
         document.body.setAttribute('data-theme', 'dark');
 
         dexie.props.put({prop_name: 'theme', prop_value: 'dark'})
-          .catch(e => {console.log('errorThemeSwitchDB', e)});
+          .catch(e => {console.log('errorThemeSwitchDB', e)})
+          .then(e => {
+            // reset textareas height because of different font
+            if (this.$route.name == 'CbtApp') {
+              this.$router.go();
+            }
+          });
 
         // this.$cookies.set('lcTheme', 'dark', Infinity);
         // console.log(this.$cookies.get('lcTheme'));
+        
+        
       }
       else {
         document.body.removeAttribute('data-theme');
 
         dexie.props.put({prop_name: 'theme', prop_value: 'light'})
-          .catch(e => {console.log('errorThemeSwitchDB', e)});
+          .catch(e => {console.log('errorThemeSwitchDB', e)})
+          .then(e => {
+            // reset textareas height because of different font 
+            if (this.$route.name == 'CbtApp') {
+              this.$router.go();
+            }
+          });
 
         // this.$cookies.set('lcTheme', 'light', Infinity);
         // console.log(this.$cookies.get('lcTheme'));
+
+        
       }
       this.themeLight = !this.themeLight;
     },
@@ -366,8 +383,8 @@ export default {
     --record-error-fixed-circle-bg: #c8ffaf;
     --record-error-fixed-circle-border: rgb(38, 226, 0);
 
-    --textarea-cbt-record-thought-padding: 4px 2px 4px 2px;
-    --textarea-cbt-record-bug-padding: 0px 2px 3px 2px;
+    --textarea-cbt-record-thought-padding: 6px 2px 2px 2px;
+    --textarea-cbt-record-bug-padding: 0px 2px 2px 2px;
   }
 
   [data-theme="dark"] {
@@ -452,13 +469,13 @@ export default {
     
   }
 
-  .textarea-cbt-record-thought {
+  /* .textarea-cbt-record-thought {
     padding: var(--textarea-cbt-record-thought-padding);
-  }
+  } */
 
-  .textarea-cbt-record-bug {
+  /* .textarea-cbt-record-bug {
     padding: var(--textarea-cbt-record-bug-padding);
-  }
+  } */
 
 
 
@@ -679,5 +696,15 @@ export default {
 
   .card-errors {
     background-color: var(--card-errors-bg);
+  }
+
+  .noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
   }
 </style>

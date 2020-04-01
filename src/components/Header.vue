@@ -16,18 +16,18 @@
 
       <!-- Right side -->
       <div style="float:right;">
-        <div @click="enterCBT()" v-if="this.$route.name != 'CbtApp'" class="app-button heading" style="width:75px;font-weight:bold;float:right;" title="Cognitive Behavioral Therapy App">
+        <div @click="enterCBT()" v-if="this.$route.name != 'CbtApp'" class="app-button heading noselect" style="width:75px;font-weight:bold;float:right;" title="Cognitive Behavioral Therapy App">
           CBT App
         </div>
       </div>
 
       <!-- In App -->
-      <div v-if="this.$route.name == 'CbtApp'" @click="exitCBT()" class="app-button heading" style="width:34px;">
+      <div v-if="this.$route.name == 'CbtApp'" @click="exitCBT()" class="app-button heading noselect" style="width:34px;">
         ▷
       </div>
 
       <div style="float:right;">
-        <div v-if="this.$route.name == 'CbtApp'" @click.prevent="cardCreate" class="app-button heading" style="font-weight:bold;margin-right:15px;width:55px;">
+        <div v-if="this.$route.name == 'CbtApp'" @click.prevent="cardCreate" class="app-button heading noselect" style="font-weight:bold;margin-right:15px;width:55px;">
           New
         </div>
       </div>

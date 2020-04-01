@@ -5,7 +5,7 @@
     <div class="card">
 
       <!-- Move icon -->
-      <div class="card-move" @click="cardMoveDialog" title="Move">
+      <div class="card-move noselect" @click="cardMoveDialog" title="Move">
         <svg class="svg-icon">
           <use xlink:href="#svg-clear"></use>
         </svg>
@@ -24,7 +24,7 @@
 
     </div>
     
-    <div class="card-errors">
+    <div class="card-errors noselect">
       <div v-for="error in errors" v-bind:key="error.short">
         <div class="icon-errors icon-div-card-errors-off" v-bind:class="{ 'icon-div-card-errors': error.is, 'record-error-fixed-circle': error.fixed }" @click="errorSwitch(error.short)" v-bind:title="error.full">
           {{ error.short }}
@@ -35,10 +35,10 @@
     <div v-for="error in errors" v-bind:key="error.short">
       <div class="card-errors-selected" v-if="error.is">
         <div @click="errorFixed(error.short)" style="cursor:pointer;">
-          <div class="circle" v-bind:class="{ 'circle-green': error.fixed }"></div>
+          <div class="circle noselect" v-bind:class="{ 'circle-green': error.fixed }"></div>
           <div class="error-title" v-bind:class="{ 'error-title-grey': error.fixed }">{{ error.title }}</div>
         </div>
-        <div style="height:30px;"></div>
+        <div style="height:25px;"></div>
         <resizable-textarea fixed="true">
           <textarea
             v-bind:id="'fixed-'+error.short" 
@@ -145,10 +145,11 @@ export default {
   border-top-right-radius: 3px;
   margin-bottom: 0px;
   position: relative;
-  padding: 5px;
+  padding: 6px;
   min-height: 50px;
   overflow: hidden;
-  padding-bottom: 2px;
+  padding-bottom: 4px;
+  padding-top: 9px;
 }
 
 .card-errors {
@@ -173,10 +174,10 @@ export default {
   border: 1px solid var(--border);
   border-top: 0px;
   min-height:35px;
-  padding: 5px;
-  padding-top: 6px;
+  padding: 6px;
   font-size:14px;
   font-family: 'Times New Roman', Times, serif;
+  padding-bottom: 4px;
 }
 
 .svg-icon {
@@ -292,6 +293,7 @@ textarea {
   float:left;
   text-decoration: underline;
   font-family: var(--error-title);
+  padding-left:1px;
 }
 
 .record-error-fixed-circle {

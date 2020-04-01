@@ -12,7 +12,7 @@
         </span>
       </div>
       <div style="height:10px;"></div>
-      <div class="app-button-2" @click="loadExamples()">Example</div>
+      <div class="app-button-2 noselect" @click="loadExamples()">Example</div>
 
       <div style="height:120px;"></div>
 
@@ -32,16 +32,16 @@
     
     <div style="float:left;display:inline-block;margin-top:-40px;">
       <a @click.prevent="cardCreate">
-        <div class="app-button-2">New</div>
+        <div class="app-button-2 noselect">New</div>
       </a>
       <a class="link-basic" @click="cbtDeleteAll">
-        <div class="app-button-2">Delete all</div>
+        <div class="app-button-2 noselect">Delete all</div>
       </a>
       <a @click="cbtExport" class="link-basic">
-        <div class="app-button-2">Export</div>
+        <div class="app-button-2 noselect">Export</div>
       </a>
       <a @click="cbtImport" class="link-basic">
-        <div class="app-button-2">Import</div>
+        <div class="app-button-2 noselect">Import</div>
       </a>
     </div>
     
@@ -127,7 +127,7 @@ export default {
 
   data: function() {
     return {
-      examples: [{"id":3,"errors":{"AoN":{"is":true,"title":"All or Nothing Thinking","full":"All or Nothing Thinking - You look at things in absolute, black-and-white categories.","short":"AoN","fixed":true,"text":"Actually, some of the apps did help me, and while I tried many of them, there are still many different promising approaches that I have not yet tried."},"MoM":{"is":false,"title":"Magnification or Minimization","full":"Magnification or Minimization - You blow things way out of proportion or shrink them.","short":"MoM","fixed":false,"text":""},"MF":{"is":true,"title":"Mental Filter","full":"Mental Filter - You dwell on the negatives and ignore the positives.","short":"MF","fixed":true,"text":"It's a bad idea to keep identifying with the thought that \"nothing can help, I tried it all\". This thought blocks me from experiencing new things. Maybe it also protects me from failures, but in order to experience life, I must accept the possibility of a failure."},"DP":{"is":false,"title":"Discounting Positives","full":"Discounting Positives - You insist your positive qualities don't count.","short":"DP","fixed":false,"text":""},"Lab":{"is":true,"title":"Labeling","full":"Labeling - Instead of saying, “I made a mistake,” you tell yourself, “I'm a jerk” or “I'm a loser.","short":"Lab","fixed":true,"text":"I should not label all self-help type of apps as \"bad\" or \"fake\", because I know for sure that many people get a lot of benefit from similar apps and methodologies."},"Per":{"is":true,"title":"Personalization","full":"Personalization - You consider negative or irrelevant events as having something to do with you.","short":"Per","fixed":true,"text":"I'm looking at this from my individual perspective. A person without previous similar negative app experience would be much more open-minded than I am now. Also, such a person would probably get better results from this app. Obviously, I can learn from this imaginable person a thing or two."},"MR":{"is":true,"title":"Mind Reading","full":"Mind Reading - You assume that people are reacting negatively to you.","short":"MR","fixed":true,"text":"I imagine that the creator of this app has dark motives, because why else he or she did create this app? This doesn't sound right, as I assume that all app creators are evil."},"FT":{"is":true,"title":"Fortune Telling","full":"Fortune Telling - You predict that things will turn out badly.","short":"FT","fixed":true,"text":"I'm predicting that the app experience will be bad, which is an unrealistic and irrational jump to the conclusion. Actually, the app experience can be either good or bad."},"Ovg":{"is":true,"title":"Overgeneralization","full":"Overgeneralization - You view a single negative event as a never-ending pattern of defeat.","short":"Ovg","fixed":true,"text":"I think that if I had a poor experience with previous apps, I will also have a similarly poor experience with all apps. That is just not true because in the world there are both good and bad apps, not only bad. That's a fact."},"SS":{"is":true,"title":"Should Statements","full":"Should Statements - You use “shoulds,” “shouldn'ts,” “musts,” “oughts,” and “have tos.”","short":"SS","fixed":true,"text":"I insist that my experience should be good. By avoiding any experience which can potentially be bad, I'm imposing my irrational rules upon reality, and by doing so, I avoid life. I need to see experiences the way they are and not how I'd like them to be. I can then accept or change them."},"SB":{"is":false,"title":"Self Blame","full":"Self Blame - You blame yourself for something you weren't entirely responsible for.","short":"SB","fixed":false,"text":""},"OB":{"is":true,"title":"Other Blame","full":"Other Blame - You blame others and overlook ways you contributed to the problem.","short":"OB","fixed":true,"text":"Well, ok. It is possible that some of the previous apps were promising, but I just didn't put the effort."},"ER":{"is":true,"title":"Emotional Reasoning","full":"Emotional Reasoning - You reason from your feelings: “I feel like an idiot, so I must be one.”","short":"ER","fixed":true,"text":"I often feel a slight fear and discomfort when faced with new things. I bet this contributes to my prejudice against similar apps, but actually has nothing to do with this particular app."},"Mag":{"is":true,"title":"Magical Thinking","full":"Magical Thinking - The Fallacy of Fairness, If Only, Control Tendencies etc.","short":"Mag","fixed":true,"text":"I admit that on some level I believe that the app should solve my problems almost in a magical way. I understand that the work needs to be done by every individual, and the app can only help and guide, but is not an effortless quick fix."}},"text":"This app is not worth my time because I already tried many of them, and none helped."}],
+      examples: [{"id":3,"errors":{"AoN":{"is":true,"title":"All or Nothing Thinking","full":"All or Nothing Thinking - You look at things in absolute, black-and-white categories.","short":"AoN","fixed":true,"text":"Actually, some of the apps did help me, and while I tried many of them, there are still many different promising approaches that I have not yet tried."},"MoM":{"is":false,"title":"Magnification or Minimization","full":"Magnification or Minimization - You blow things way out of proportion or shrink them.","short":"MoM","fixed":false,"text":""},"MF":{"is":true,"title":"Mental Filter","full":"Mental Filter - You dwell on the negatives and ignore the positives.","short":"MF","fixed":true,"text":"It's a bad idea to keep identifying with the thought that \"nothing can help, I tried it all\". This thought blocks me from experiencing new things. Maybe it also protects me from failures, but in order to experience life, I need to accept the possibility of a failure."},"DP":{"is":false,"title":"Discounting Positives","full":"Discounting Positives - You insist your positive qualities don't count.","short":"DP","fixed":false,"text":""},"Lab":{"is":true,"title":"Labeling","full":"Labeling - Instead of saying, “I made a mistake,” you tell yourself, “I'm a jerk” or “I'm a loser.","short":"Lab","fixed":true,"text":"I should not label all self-help type of apps as \"bad\" or \"fake\", because I know for sure that many people get a lot of benefit from similar apps and methodologies."},"Per":{"is":true,"title":"Personalization","full":"Personalization - You consider negative or irrelevant events as having something to do with you.","short":"Per","fixed":true,"text":"I'm looking at this from my individual perspective. A person without previous similar negative app experience would be much more open-minded than I am now. Also, such a person would probably get better results from this app. Obviously, I can learn from this imaginable person a thing or two."},"MR":{"is":true,"title":"Mind Reading","full":"Mind Reading - You assume that people are reacting negatively to you.","short":"MR","fixed":true,"text":"I imagine that the creator of this app has dark motives, because why else he or she did create this app? This doesn't sound right, as I assume that all app creators are evil."},"FT":{"is":true,"title":"Fortune Telling","full":"Fortune Telling - You predict that things will turn out badly.","short":"FT","fixed":true,"text":"I'm predicting that the app experience will be bad, which is an unrealistic and irrational jump to the conclusion. Actually, the app experience can be either good or bad."},"Ovg":{"is":true,"title":"Overgeneralization","full":"Overgeneralization - You view a single negative event as a never-ending pattern of defeat.","short":"Ovg","fixed":true,"text":"I think that if I had a poor experience with previous apps, I will also have a similarly poor experience with all apps. That is just not true because in the world there are both good and bad apps, not only bad. That's a fact."},"SS":{"is":true,"title":"Should Statements","full":"Should Statements - You use “shoulds,” “shouldn'ts,” “musts,” “oughts,” and “have tos.”","short":"SS","fixed":true,"text":"I insist that my experience should be good. By avoiding any experience which can potentially be bad, I'm imposing my irrational rules upon reality, and by doing so, I avoid life. I need to see experiences the way they are and not how I'd like them to be. I can then accept or change them."},"SB":{"is":false,"title":"Self Blame","full":"Self Blame - You blame yourself for something you weren't entirely responsible for.","short":"SB","fixed":false,"text":""},"OB":{"is":true,"title":"Other Blame","full":"Other Blame - You blame others and overlook ways you contributed to the problem.","short":"OB","fixed":true,"text":"Well, ok. It is possible that some of the previous apps were promising, but I just didn't put the effort."},"ER":{"is":true,"title":"Emotional Reasoning","full":"Emotional Reasoning - You reason from your feelings: “I feel like an idiot, so I must be one.”","short":"ER","fixed":true,"text":"I often feel a slight fear and discomfort when faced with new things. I bet this contributes to my prejudice against similar apps, but actually has nothing to do with this particular app."},"Mag":{"is":true,"title":"Magical Thinking","full":"Magical Thinking - The Fallacy of Fairness, If Only, Control Tendencies etc.","short":"Mag","fixed":true,"text":"I admit that on some level I believe that the app should solve my problems almost in a magical way. I understand that the work needs to be done by every individual, and the app can only help and guide, but is not an effortless quick fix."}},"text":"This app is not worth my time because I already tried many of them, and none helped."}],
 
       cbtTutorial: true,
       digs: [],
@@ -267,8 +267,7 @@ export default {
     CbtRecord
   },
 
-
-  mounted: function() {
+  beforeMount: function() {
 
     // load notes from indexedDB
     dexie.notes.toArray( notes => {      
@@ -280,14 +279,16 @@ export default {
 
         // if (idx === array.length - 1) { 
         //   // console.log("Last callback call at index " + idx + " with value " + note.id );
-        //   setTimeout(() => {
-        //     this.toTop();
-        //   }, 500);
         // }
 
       });
     })
-    .catch(e => {console.log('20', e)} );
+    .catch(e => {console.log('E020', e)} );
+
+  },
+
+  mounted: function() {
+
 
   },
 
@@ -494,7 +495,7 @@ export default {
     toTop: function() {
       window.scrollTo(0,0);
       // document.getElementById('scroll-to-top').scrollTop;
-      scrollTo(document.getElementById('scroll-to-top'), 0, 100);
+      scrollTo(document.getElementById('scroll-to-top'), 0, 0);
     },
 
   },

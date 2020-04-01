@@ -8,7 +8,7 @@
       <h4>Example</h4>
 
       <p>
-        Bob has decided to start exercising, eating healthy food, practicing daily meditation. The first three days he was very enthusiastic, doing all these things and feeling better with each day. Then came a setback. The body just didn't feel right, was tired. That day he missed his new routine and in the evening he concluded that he is a complete failure. The next morning in his mind he was already failed - there was no more reason to continue with his new plan.
+        Bob has decided to start exercising, eating healthy food, practicing daily meditation. The first three days he was very enthusiastic, doing all these things and feeling better with each day. Then came a setback. The body just didn't feel right, was tired. That day he missed his new routine and in the evening he concluded that he is a complete failure. The next morning in his mind he was already failed, and so there was no more reason to continue with his new plan.
       </p>
 
       <p>
@@ -34,7 +34,7 @@
 
       <p>When the All or Nothing thinking error works together with other cognitive distortions, they amplify each other and create chain reactions.</p>
 
-      <p>For example, with All or Nothing + Jumping to Conclusions and the Mental Filter distortions, it is very easy to dive straight into the deepest form of depression.</p>
+      <p>For example, with All or Nothing + Jumping to Conclusions and the Mental Filter distortions, it is very easy to become depressed.</p>
 
       <p>It's a thinking error because it oversimplifies and distorts reality. In most situations, the answer is never just a binary 1 or 2. The reality is much more nuanced, and the truth is somewhere in between.</p>
 

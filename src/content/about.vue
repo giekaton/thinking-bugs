@@ -2,28 +2,30 @@
 
   <div class="links-content">
     <h1>
-      About the Thinking Bugs
+      About
     </h1>
 
-    <div style="height:40px;"></div>
+    <div style="height:20px;"></div>
 
-    <p>Thinking Bugs is a web app where you will find the classical cognitive distortions list (also referred to as <a href="https://twitter.com/thinkingbugs/status/1182119140267569154" target="_blank">"bugs"</a> or "errors") and the CBT App to fix your thinking 🐛🐞💥.</p>
+    <p>Thinking Bugs is a web app where you will find the classical cognitive distortions list (also referred to as <a href="https://twitter.com/thinkingbugs/status/1182119140267569154" target="_blank">"bugs"</a> or "errors") and the <a href="https://thinkingbugs.com/cbt-app" target="_blank">CBT App</a> to fix your thinking 🐛🐞💥.</p>
 
-    <p>The list of thinking errors and the CBT App are based on classical Cognitive Behavioral Therapy.</p>
+    <p>The list of thinking errors and the CBT App are based on the classical Cognitive Behavioral Therapy.</p>
 
     <p>Being a Progressive Web App (PWA), Thinking Bugs can be <a @click.prevent="installPWA()">installed</a> on most mobile and desktop devices and used even without the internet.</p>
 
-    <p>Thinking Bugs is <a href="https://github.com/giekaton/thinking-bugs" target="_blank">open source</a>. Feel free to suggest content editions and ideas for new features.</p>
+    <p>Thinking Bugs is <a href="https://github.com/giekaton/thinking-bugs" target="_blank">open source</a> and privacy-focused.</p>
 
-    <div style="height:10px;"></div>
+    <div style="height:15px;"></div>
 
-    <p>Still here? Consider the possibility of a bug with the ability to think. You know, the thinking bug. Sounds unrealistic. As far as we know, animals, insects, and other beings cannot think. Only humans can.</p>
+    <p><b>The Thinking Bugs concept</b></p>
+
+    <p>Let's consider the possibility of a bug with the ability to think. You know, the thinking bug. Sounds unrealistic. As far as we know, animals, insects, and other beings cannot think. Only humans can.</p>
 
     <p>Thinking is a blessing but also a curse, as uncontrolled thinking leads to depression or other problems.</p>
 
     <p style="font-size:14px;"><i>"Your mind is an instrument, a tool. It is there to be used for a specific task, and when the task is completed, you lay it down. As it is, I would say about 80 to 90 percent of most people’s thinking is not only repetitive and useless, but because of its dysfunctional and often negative nature, much of it is also harmful. Observe your mind and you will find this to be true. It causes a serious leakage of vital energy." – Eckhart Tolle</i></p>
 
-    <div style="height:10px;"></div>
+    <!-- <div style="height:10px;"></div> -->
 
     <p>Is this constant, unstoppable, repeated thinking bugging you? Does it bug you? Most likely, yes. Anxiety, depression, anger, and similar common experiences are results of the thinking bugs. Some of the negative experiences are legitimate but a person with lots of thinking errors is suffering because of his or her own mind.</p>
 
@@ -70,7 +72,7 @@
     <p><b>New to CBT?</b></p>
 
     <p>
-    If you are completely new to the Cognitive Behavioral Therapy, please seek additional sources of information before trying to work with the CBT App. The information currently available on Thinking Bugs website does not explain CBT fully, but is more like a reference and a reminder. Please refer to classical books about Cognitive Behavioral Therapy, such as <a href="https://www.amazon.com/Feeling-Good-New-Mood-Therapy/dp/0380810336" target="_blank">Feeling Good: The New Mood Therapy</a> by Dr. David D. Burns. You can then use the CBT App way more efficiently.
+    If you are completely new to the Cognitive Behavioral Therapy, please seek additional sources of information before trying to work with the CBT App. The information currently available on Thinking Bugs website does not explain CBT fully, but is more like a quick reminder.
     </p>
 
     <div style="height:25px;"></div>
@@ -78,10 +80,20 @@
     <p><b>Contact</b></p>
 
     <p>Contact us by email: &#104;&#x69;&#64;&#116;&#x68;i&#110;&#x6b;i&#110;&#x67;b&#117;&#x67;s&#46;&#x63;o&#109;</p>
-
+        
     <p>
       Follow and fork on <a href="https://twitter.com/thinkingbugs" target="_blank">Twitter</a> and <a href="https://github.com/giekaton/thinking-bugs" target="_blank">GitHub</a>.
     </p>
+
+    <p>The aim of the Thinking Bugs is to present the information about cognitive distortions objectively, comprehensively, impartially, and in a simple and easy to understand way. If you see how the information about cognitive distortions can be improved, you are welcome to contribute on <a href="https://github.com/giekaton/thinking-bugs/blob/master/src/content/" target="_blank">GitHub</a> or by contacting us by email.
+    </p>
+
+    <div style="height:25px;"></div>
+
+    <p><b>DISCLAIMER</b></p>
+
+    <p style="text-transform:uppercase;">The ideas and suggestions contained on this website are not intended as a substitute for consulting with your physician. All matters regarding your health require medical supervision.</p>
+
 
   </div>
 
