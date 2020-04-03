@@ -9,7 +9,11 @@
 
     <p>Thinking Bugs is a web app where you will find the classical cognitive distortions list (also referred to as <a href="https://twitter.com/thinkingbugs/status/1182119140267569154" target="_blank">"bugs"</a> or "errors") and the <a href="https://thinkingbugs.com/cbt-app" target="_blank">CBT App</a> to fix your thinking 🐛🐞💥.</p>
 
-    <p>The list of thinking errors and the CBT App are based on the classical Cognitive Behavioral Therapy.</p>
+    <p>The list of thinking errors is based on the classical Cognitive Behavioral Therapy.</p>
+
+    <p>The CBT App is a digital version of the classical CBT practice, based on the <a href="https://feelinggood.com/tag/daily-mood-log/" target="_blank">mood logging technique</a>, as described and popularized by <a href="https://en.wikipedia.org/wiki/David_D._Burns" target="_blank">David D. Burns</a> and <a href="https://en.wikipedia.org/wiki/Aaron_T._Beck" target="_blank">Aaron T. Beck</a>.</p>
+
+    <p>The app works "client-side" in an offline mode, which means that private information (e.g. thought records) never leaves the user's local device - the data is never sent over the internet.</p>
 
     <p>Being a Progressive Web App (PWA), Thinking Bugs can be <a @click.prevent="installPWA()">installed</a> on most mobile and desktop devices and used even without the internet.</p>
 
@@ -17,7 +21,7 @@
 
     <div style="height:15px;"></div>
 
-    <p><b>The Thinking Bugs concept</b></p>
+    <p><b>Thinking Bugs?</b></p>
 
     <p>Let's consider the possibility of a bug with the ability to think. You know, the thinking bug. Sounds unrealistic. As far as we know, animals, insects, and other beings cannot think. Only humans can.</p>
 

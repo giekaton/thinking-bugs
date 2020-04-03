@@ -11,13 +11,12 @@
         </svg>
       </div>
 
-      <resizable-textarea >
+      <resizable-textarea>
         <textarea 
           v-bind:id="'card-'+id" 
           v-bind:value="note" 
           @input="cardUpdate"
           placeholder="Type your thought"
-          class="textarea-cbt-record-thought"
         >
         </textarea>
       </resizable-textarea>
@@ -103,7 +102,7 @@ export default {
     },
     errorSwitch(el) {
       
-      let currentDig = this.$parent.digs.find(dig => dig.id === this.id);
+      let currentDig = this.$parent.thoughts.find(thought => thought.id === this.id);
 
       console.log(this.errors[el]);
 

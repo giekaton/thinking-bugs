@@ -67,9 +67,9 @@ export default {
           .catch(e => {console.log('errorThemeSwitchDB', e)})
           .then(e => {
             // reset textareas height because of different font
-            if (this.$route.name == 'CbtApp') {
-              this.$router.go();
-            }
+            // if (this.$route.name == 'CbtApp') {
+            //   this.$router.go();
+            // }
           });
 
         // this.$cookies.set('lcTheme', 'dark', Infinity);
@@ -84,9 +84,9 @@ export default {
           .catch(e => {console.log('errorThemeSwitchDB', e)})
           .then(e => {
             // reset textareas height because of different font 
-            if (this.$route.name == 'CbtApp') {
-              this.$router.go();
-            }
+            // if (this.$route.name == 'CbtApp') {
+            //   this.$router.go();
+            // }
           });
 
         // this.$cookies.set('lcTheme', 'light', Infinity);
@@ -396,8 +396,8 @@ export default {
     --color-logo: #e8e8e8;
     --color-bg: #1f1e21;
 
-    /* --color-font: #fcfcfc; */
-    --color-font: #e6e6e6;
+    --color-font: #f7f7f7;
+    /* --color-font: #e6e6e6; */
     /* --color-bg-header: #342d52; */
     /* --color-bg-header: #0f0c1d; */
     --color-bg-header: #201d2b;
