@@ -13,11 +13,11 @@
 
     <p>The CBT App is a digital version of the classical CBT practice, based on the <a href="https://feelinggood.com/tag/daily-mood-log/" target="_blank">mood logging technique</a>, as described and popularized by <a href="https://en.wikipedia.org/wiki/David_D._Burns" target="_blank">David D. Burns</a> and <a href="https://en.wikipedia.org/wiki/Aaron_T._Beck" target="_blank">Aaron T. Beck</a>.</p>
 
-    <p>The app works "client-side" in an offline mode, which means that private information (e.g. thought records) never leaves the user's local device - the data is never sent over the internet.</p>
+    <p>The app privacy-focused by design. It works "client-side" in an offline mode, which means that private information (e.g. thought records) never leaves the user's local device - the data is never sent over the internet.</p>
 
     <p>Being a Progressive Web App (PWA), Thinking Bugs can be <a @click.prevent="installPWA()">installed</a> on most mobile and desktop devices and used even without the internet.</p>
 
-    <p>Thinking Bugs is <a href="https://github.com/giekaton/thinking-bugs" target="_blank">open source</a> and privacy-focused.</p>
+    <p>Thinking Bugs is <a href="https://github.com/giekaton/thinking-bugs" target="_blank">open source</a>.</p>
 
     <div style="height:15px;"></div>
 
@@ -76,7 +76,7 @@
     <p><b>New to CBT?</b></p>
 
     <p>
-    If you are completely new to the Cognitive Behavioral Therapy, please seek additional sources of information before trying to work with the CBT App. The information currently available on Thinking Bugs website does not explain CBT fully, but is more like a quick reminder.
+    If you are completely new to the Cognitive Behavioral Therapy, please seek additional sources of information before trying to work with the CBT App. The information currently available on the Thinking Bugs website functions only as a quick reminder and does not explain the CBT practice fully.
     </p>
 
     <div style="height:25px;"></div>

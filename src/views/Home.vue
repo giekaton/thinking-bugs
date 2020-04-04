@@ -8,14 +8,18 @@
 
     <h3 style="font-size:15px;margin-top:30px;" class="links-content">
       
-      Cognitive Behavioral Therapy (CBT) is a scientific, well-tested and most proven logical approach for challenging our distorted thoughts and transforming them from intrusive and unhelpful into realistic and beneficial.
-
-      The irrational, unrealistic and often negative thoughts are common to different people. These thoughts are classified into different types, named together as cognitive distortions, also known as thinking errors or <a href="https://twitter.com/thinkingbugs/status/1182119140267569154" target="_blank">thinking bugs</a>.
-
-      By deconstructing and changing our irrational thoughts, we can greatly improve our life quality, performance, general well-being and solve many psychological issues, such as anxiety, panic attacks, depression, OCD, PTSD, ADHD and similar. <router-link to="/about">Read more...</router-link>
+      Cognitive Behavioral Therapy (CBT) is a scientific, well-tested, most proven and most efficient logical approach for challenging our distorted thoughts and transforming them from intrusive and unhelpful into rational and beneficial.
 
       <br><br>
-      The list of classical cognitive distortions is presented below. These thinking bugs can be spotted in our thought patterns and fixed using the <router-link to="/cbt-app">CBT App</router-link>.
+
+      The irrational and often negative thoughts are common to different people. These thoughts are classified into different types, named together as cognitive distortions, also known as thinking errors or <a href="https://twitter.com/thinkingbugs/status/1182119140267569154" target="_blank">thinking bugs</a>.
+
+      By deconstructing and changing our irrational thoughts, we can greatly improve our life quality, performance, general well-being and solve many psychological issues, such as anxiety, panic attacks, depression, OCD, PTSD, ADHD and similar.
+      
+      <!-- <router-link to="/about">Read more...</router-link> -->
+
+      <br><br>
+      The list of classical cognitive distortions is presented below. These thinking bugs can be spotted in our thought patterns and fixed using the <a href="/cbt-app" target="_blank">CBT App</a>.
 
       <br><br>
       

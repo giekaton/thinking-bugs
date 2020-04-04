@@ -53,25 +53,26 @@
         <b>Quick start</b>
       </p>
 
-      <p>
-        Create a new thought record. First, type your thought. Then identify the thinking errors and select them by 
-        clicking on their circles. After that, rewrite each thinking error in a realistic and rational way. Finally, click the error's red circle 
-        to turn it green and mark the error as fixed.
-      </p>
-
-      <p>
-        This technique does not work if you keep your thoughts in the head. The thought needs to be written down and then challenged by spotting and fixing cognitive distortions.
-      </p>
-
-      <p>
-        When you identify the cognitive distortions in your though, these thinking bugs need to be challenged one by one. Each thinking error needs to be rewritten in a new, rational and realistically positive way. Then it can be marked as fixed.
-      </p>
+      <ul>
+        <li>Create a new thought record and type your thought.</li>
+        <li>Then identify and select the cognitive distortions in your thought.</li>
+        <li>Rewrite each cognitive distortion in a rational and realistically positive way.</li>
+        <li>Finally, click the distortion's red circle to turn it green and mark it as fixed.</li>
+      </ul>
 
       <br>
 
       <p>
         <b>Tips</b>
       </p>
+
+      <!-- <p>
+        This technique does not work if you keep your thoughts in the head. The thought needs to be written down and then challenged by spotting and fixing cognitive distortions.
+      </p>
+
+      <p>
+        When you identify the cognitive distortions in your though, these thinking bugs need to be challenged one by one. Each thinking error needs to be rewritten in a new, rational and realistically positive way. Then it can be marked as fixed.
+      </p> -->
 
       <p>
         Thinking Bugs is an offline-first progressive web app (PWA) - it can be <a @click="installPWA()">installed</a> on most mobile and desktop devices and used even without the internet.
@@ -90,9 +91,9 @@
         When you import records from a backup, the existing data in the app (if any) is deleted and replaced with new records from the imported archive. If you want to work with multiple backup files, you can use separate browsers, separate devices or work in incognito mode.
       </p>
       
-      <div style="height:6px;"></div>
+      <div style="height:10px;"></div>
 
-      <p><a href="/about" target="_blank">More info...</a></p>
+      <!-- <p><a href="/about" target="_blank">Read more...</a></p> -->
 
     </div>
 
