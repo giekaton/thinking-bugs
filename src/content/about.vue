@@ -13,7 +13,7 @@
 
     <p>The CBT App is a digital version of the classical CBT practice, based on the <a href="https://feelinggood.com/tag/daily-mood-log/" target="_blank">mood logging technique</a>, as described and popularized by <a href="https://en.wikipedia.org/wiki/David_D._Burns" target="_blank">David D. Burns</a> and <a href="https://en.wikipedia.org/wiki/Aaron_T._Beck" target="_blank">Aaron T. Beck</a>.</p>
 
-    <p>The app privacy-focused by design. It works "client-side" in an offline mode, which means that private information (e.g. thought records) never leaves the user's local device - the data is never sent over the internet.</p>
+    <p>The app is privacy-focused by design. It works "client-side" in an offline mode, which means that private information (e.g. thought records) never leaves the user's local device - the data is never sent over the internet.</p>
 
     <p>Being a Progressive Web App (PWA), Thinking Bugs can be <a @click.prevent="installPWA()">installed</a> on most mobile and desktop devices and used even without the internet.</p>
 
@@ -83,13 +83,13 @@
 
     <p><b>Contact</b></p>
 
-    <p>Contact us by email: &#104;&#x69;&#64;&#116;&#x68;i&#110;&#x6b;i&#110;&#x67;b&#117;&#x67;s&#46;&#x63;o&#109;</p>
+    <p>Email: &#104;&#x69;&#64;&#116;&#x68;i&#110;&#x6b;i&#110;&#x67;b&#117;&#x67;s&#46;&#x63;o&#109;</p>
         
     <p>
       Follow and fork on <a href="https://twitter.com/thinkingbugs" target="_blank">Twitter</a> and <a href="https://github.com/giekaton/thinking-bugs" target="_blank">GitHub</a>.
     </p>
 
-    <p>The aim of the Thinking Bugs is to present the information about cognitive distortions objectively, comprehensively, impartially, and in a simple and easy to understand way. If you see how the information about cognitive distortions can be improved, you are welcome to contribute on <a href="https://github.com/giekaton/thinking-bugs/blob/master/src/content/" target="_blank">GitHub</a> or by contacting us by email.
+    <p>The aim of the Thinking Bugs is to present the information about cognitive distortions objectively, comprehensively, impartially, and in a simple and easy to understand way. If you see how the information about cognitive distortions can be improved, you are welcome to contribute on <a href="https://github.com/giekaton/thinking-bugs/blob/master/src/content/" target="_blank">GitHub</a> or by email.
     </p>
 
     <div style="height:25px;"></div>

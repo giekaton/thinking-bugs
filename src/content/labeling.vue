@@ -8,12 +8,12 @@
 
       <h4>Example</h4>
 
-      <p>From the early days, Alice saw herself as “bad” because in her childhood mother constantly repeated Alice that she is bad. She became receptive to this label, and then other people in her life started to use this label (intentionally or not) to manipulate her. Throughout her life, when thinking about herself as “bad”, Alice often experienced states of depression, and it felt like a natural identity to her.</p>
+      <p>From the early days, Alice saw herself as “bad” because in her childhood mother constantly repeated Alice that she is bad. She became receptive to this label, and then other people in her life started (intentionally or not) to use the label to manipulate her. Throughout her life, when thinking about herself as “bad”, Alice often experienced states of depression, and it felt like a natural identity to her.</p>
 
       <h4>Explained</h4>
 
       <p>
-        Labeling is a cognitive distortion which appears in our thinking when we try describe ourselves or other people by a single label, e.g. “I failed the exam, it means I’m a loser”. Here, the label “loser” is an extreme form of the Overgeneralization and the Black and White Thinking.
+        Labeling is a cognitive distortion which appears in our thinking when we try to describe ourselves or other people by a single label, e.g. “I failed the exam, it means I’m a loser”. Here, the label “loser” is an extreme form of the Overgeneralization and the Black and White Thinking.
       </p>
 
       <p>Labeling is a thinking bug because in reality things are never defined by a single label. It is a cognitive distortion because it contradicts the generally known scientific truths and defies commonly understood laws of reality.</p>

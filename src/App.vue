@@ -59,17 +59,16 @@ export default {
     },
 
     themeSwitch: function() {
-      scrollTo(document.getElementById('scroll-to-top'), 0, 0);
+      
       if (this.themeLight) {
         document.body.setAttribute('data-theme', 'dark');
 
         dexie.props.put({prop_name: 'theme', prop_value: 'dark'})
           .catch(e => {console.log('errorThemeSwitchDB', e)})
           .then(e => {
-            // reset textareas height because of different font
-            // if (this.$route.name == 'CbtApp') {
-            //   this.$router.go();
-            // }
+            if (this.$route.name == 'CbtApp') {
+              scrollTo(document.getElementById('scroll-to-top'), 0, 0);
+            }
           });
 
         // this.$cookies.set('lcTheme', 'dark', Infinity);
@@ -83,10 +82,9 @@ export default {
         dexie.props.put({prop_name: 'theme', prop_value: 'light'})
           .catch(e => {console.log('errorThemeSwitchDB', e)})
           .then(e => {
-            // reset textareas height because of different font 
-            // if (this.$route.name == 'CbtApp') {
-            //   this.$router.go();
-            // }
+            if (this.$route.name == 'CbtApp') {
+              scrollTo(document.getElementById('scroll-to-top'), 0, 0);
+            }
           });
 
         // this.$cookies.set('lcTheme', 'light', Infinity);

@@ -8,7 +8,7 @@
       <h4>Example</h4>
 
       <p>
-        Bob has decided to start exercising, eating healthy food, practicing daily meditation. The first three days he was very enthusiastic, doing all these things and feeling better with each day. Then came a setback. The body just didn't feel right, was tired. That day he missed his new routine and in the evening he concluded that he is a complete failure. The next morning in his mind he was already failed, and so there was no more reason to continue with his new plan.
+        Bob has decided to start exercising, eating healthy food, practicing daily meditation. The first three days he was very enthusiastic, doing all these things and feeling better with each day. Then came a setback. The body just didn't feel right, was tired. That day he missed his new routine and in the evening concluded that he is a complete failure. The next morning in his mind he was already failed, and so there was no more reason to continue with his new plan.
       </p>
 
       <p>
@@ -24,19 +24,19 @@
 
       <h4>Explained</h4>
 
-      <p>We do this thinking error when we look at things from two opposite perspectives and think that it’s either one or the other, without anything in between.</p>
+      <p>We do this thinking error when we look at situations from two opposite perspectives and think that it’s either one extreme or the other, without anything in between.</p>
 
       <p>A person engaging in this type of thinking sees things in a binary mode. Everything becomes either 0 or 1, On or Off, Good or Bad.</p>
 
       <p>Also called "Black and White" thinking or "Dichotomous" thinking, this error makes us evaluate life in extreme terms: It's either perfect or a disaster.</p>
 
-      <p>When used intentionally, a little exaggeration might not be damaging, and can even increase creativity, motivation or give other benefits. The All or Nothing Thinking is harmful when it appears as an automatic mind pattern and makes us see the world through the black and white lens.</p>
+      <p>When used intentionally, a little exaggeration might not be damaging, and can even increase creativity, motivation or provide other benefits. The All or Nothing Thinking is harmful when it appears as an automatic mind pattern and makes us see the world through the black and white lens without us being aware of it.</p>
 
       <p>When the All or Nothing thinking error works together with other cognitive distortions, they amplify each other and create chain reactions.</p>
 
-      <p>For example, with All or Nothing + Jumping to Conclusions and the Mental Filter distortions, it is very easy to become depressed.</p>
+      <p>For example, with All or Nothing + Jumping to Conclusions and the Mental Filter distortions, it is very easy to become deeply depressed without a valid reason for the depression, as the reason can be created in the person's mind by interpreting everyday life events in a distorted way.</p>
 
-      <p>It's a thinking error because it oversimplifies and distorts reality. In most situations, the answer is never just a binary 1 or 2. The reality is much more nuanced, and the truth is somewhere in between.</p>
+      <p>The All or Nothing Thinking is a cognitive distortion because it oversimplifies and distorts reality. With just a few arbitrary exceptions, the answer is never just a binary 1 or 2. The reality is much more nuanced, and the truth is somewhere in between.</p>
 
       <p>The "black and white" worldview is subjective to every individual. When other people, not part of the individual's All or Nothing Thinking belief system, observe the same situations, they do not make similar self-defeating conclusions, as the individual, doing the error.</p>
 
