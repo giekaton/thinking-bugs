@@ -31,18 +31,22 @@
     <br>
     
     <div style="float:left;display:inline-block;margin-top:-40px;">
-      <a @click.prevent="cardCreate">
-        <div class="app-button-2 noselect">New</div>
-      </a>
-      <a class="link-basic" @click="cbtDeleteAll">
-        <div class="app-button-2 noselect">Delete all</div>
-      </a>
-      <a @click="cbtExport" class="link-basic">
-        <div class="app-button-2 noselect">Export</div>
-      </a>
-      <a @click="cbtImport" class="link-basic">
-        <div class="app-button-2 noselect">Import</div>
-      </a>
+      <div style="float:left;">
+        <a @click.prevent="cardCreate">
+          <div class="app-button-2 noselect">New</div>
+        </a>
+        <a class="link-basic" @click="cbtDeleteAll">
+          <div class="app-button-2 noselect">Delete all</div>
+        </a>
+      </div>
+      <div style="float:left;">
+        <a @click="cbtExport" class="link-basic">
+          <div class="app-button-2 noselect">Export</div>
+        </a>
+        <a @click="cbtImport" class="link-basic">
+          <div class="app-button-2 noselect">Import</div>
+        </a>
+      </div>
     </div>
     
     <div style="clear:both;height:50px;"></div>

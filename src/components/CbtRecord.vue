@@ -5,7 +5,7 @@
     <div class="card">
 
       <!-- Move icon -->
-      <div class="card-move noselect" @click="cardMoveDialog" title="Move">
+      <div class="card-move noselect" @click="cardMoveDialog" title="Delete">
         <svg class="svg-icon">
           <use xlink:href="#svg-clear"></use>
         </svg>

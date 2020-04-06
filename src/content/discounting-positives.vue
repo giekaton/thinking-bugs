@@ -27,27 +27,24 @@
     </h4>
 
     <p>
-      You can fix your thinking bugs with the help of the classical Cognitive Behavioral Therapy. Here, it is presented in a digital format, as the <a href="https://thinkingbugs.com/cbt-app" target="_blank">CBT app</a>.
+      You can fix your thinking bugs with the help of the <a href="https://thinkingbugs.com/cbt-app" target="_blank">CBT app</a> - a digital version of the classical Cognitive Behavioral Therapy practice.
     </p>
 
     <p>
-      Record the negative thought in the CBT app. Then identify the Discounting Positives bug. Finally, rewrite the thought more realistically, considering other possible interpretations of the situation.
+      Record your thought in the CBT app. Then identify the Discounting Positives bug. Finally, challenge the distorted thought and rewrite it in a rational way.
     </p>
 
-
-    <div class="content-contribution content-quickstart">
-      <p>
-        <b>Contribute</b>
-      </p>
-
-      <p>
-        The aim of the Thinking Bugs is to present the information about cognitive distortions objectively, comprehensively, impartially, and in a simple and easy to understand way.
-      </p>
-
-      <p>
-        If you see how the information on this page can be made better, you are welcome to contribute on <a href="https://github.com/giekaton/thinking-bugs/blob/master/src/content/" target="_blank">GitHub</a> or by contacting us at &#x66;e&#x65;&#100;&#x62;&#x61;c&#x6b;&#64;&#x74;&#x68;i&#x6e;&#107;&#x69;&#x6e;g&#x62;&#117;&#x67;&#x73;&#46;&#x63;&#111;&#x6d;.
-      </p>
-    </div>
+    <menu-bottom v-bind:current="'DP'"></menu-bottom>
 
   </div>
 </template>
+
+<script>
+  import MenuBottom from '../components/MenuBottom.vue';
+
+  export default {
+    components: {
+      MenuBottom
+    }
+  }
+</script>

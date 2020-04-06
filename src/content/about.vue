@@ -81,15 +81,21 @@
 
     <div style="height:25px;"></div>
 
+    <p><b>Contribute</b></p>
+
+    <p>The aim of the Thinking Bugs is to present the information about cognitive distortions objectively, comprehensively, impartially, and in a simple and easy to understand way. If you see how the information about cognitive distortions can be improved, you are welcome to contribute on <a href="https://github.com/giekaton/thinking-bugs/blob/master/src/content/" target="_blank">GitHub</a> or by email.
+    </p>
+
+    <div style="height:25px;"></div>
+
     <p><b>Contact</b></p>
 
     <p>Email: &#104;&#x69;&#64;&#116;&#x68;i&#110;&#x6b;i&#110;&#x67;b&#117;&#x67;s&#46;&#x63;o&#109;</p>
         
     <p>
-      Follow and fork on <a href="https://twitter.com/thinkingbugs" target="_blank">Twitter</a> and <a href="https://github.com/giekaton/thinking-bugs" target="_blank">GitHub</a>.
-    </p>
-
-    <p>The aim of the Thinking Bugs is to present the information about cognitive distortions objectively, comprehensively, impartially, and in a simple and easy to understand way. If you see how the information about cognitive distortions can be improved, you are welcome to contribute on <a href="https://github.com/giekaton/thinking-bugs/blob/master/src/content/" target="_blank">GitHub</a> or by email.
+      <a href="https://twitter.com/thinkingbugs" target="_blank">Twitter</a>
+      <br>
+      <a href="https://github.com/giekaton/thinking-bugs" target="_blank">GitHub</a>
     </p>
 
     <div style="height:25px;"></div>

@@ -5,7 +5,7 @@
 
       <component v-bind:is="autoRoute"></component>
 
-      <div style="height:40px;"></div>
+      <div style="height:50px;"></div>
 
     </template>
 

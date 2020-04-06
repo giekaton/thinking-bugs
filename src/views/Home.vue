@@ -8,7 +8,7 @@
 
     <h3 style="font-size:15px;margin-top:30px;" class="links-content">
       
-      Cognitive Behavioral Therapy (CBT) is a scientific, well-tested, most proven and most efficient logical approach for challenging our distorted thoughts and transforming them from intrusive and unhelpful into rational and beneficial.
+      Cognitive Behavioral Therapy (CBT) is a scientific, well-tested, most proven and most effective logical approach for challenging our distorted thoughts and transforming them from intrusive and unhelpful into rational and beneficial.
 
       <br><br>
 
