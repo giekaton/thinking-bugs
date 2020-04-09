@@ -1,30 +1,25 @@
-# Thinking errors list and the CBT app
+## The classical thinking errors list and the CBT App
 
-Client side, offline-first. Early beta version!
+Privacy-focused, offline-first progressive web app (PWA).
 
-Live at: [https://thinkingbugs.com](https://thinkingbugs.com)
+Direct link to the CBT App: [https://thinkingbugs.com/cbt-app](https://thinkingbugs.com/cbt-app)
 
-To access the CBT App directly: [https://thinkingbugs.com/cbt-app](https://thinkingbugs.com/cbt-app)
+The CBT App is a digital version of the classical Cognitive Behavioral Therapy.
 
-## Project setup
+More info about the Thinking Bugs project: [https://thinkingbugs.com/about](https://thinkingbugs.com/about)
+
+
+### Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+#### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+#### Compiles and minifies for production
 ```
 npm run build
 ```
-
-## Todo
-
-- Update/improve content (80% done, contributions are welcome)
-- ~~Remove the current Wordpress backend, and make everything client-side only, Vue.js based~~
-- ~~Make it an offline-first PWA~~
-- ~~Update/improve UI/UX~~
-- E2EE sync

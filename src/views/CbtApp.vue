@@ -58,10 +58,10 @@
       </p>
 
       <ul>
-        <li>Create a new thought record and type your thought.</li>
-        <li>Then identify and select the cognitive distortions in your thought.</li>
-        <li>Rewrite each cognitive distortion in a rational and realistically positive way.</li>
-        <li>Finally, click the distortion's red circle to turn it green and mark it as fixed.</li>
+        <li>Create a new thought record and type a thought that upsets you.</li>
+        <li>Now, identify and select the cognitive distortions in your thought.</li>
+        <li>Challenge and rewrite each distortion in a rational and realistically positive way.</li>
+        <li>Click the distortion's red circle to turn it green and mark it as fixed.</li>
       </ul>
 
       <br>
@@ -79,20 +79,20 @@
       </p> -->
 
       <p>
-        Thinking Bugs is an offline-first progressive web app (PWA) - it can be <a @click="installPWA()">installed</a> on most mobile and desktop devices and used even without the internet.
+        The Thinking Bugs CBT App is an offline-first progressive web app (PWA) - it can be <a @click="installPWA()">installed</a> on most mobile and desktop devices and used even without the internet.
       </p>
 
       <p>
-        The CBT app is privacy-focused by design. Your records are saved on your local device only, in the browser you are currently using. There are no accounts. If you delete your records, they are deleted permanently.
+        The CBT App is privacy-focused by design. Your records are saved on your local device only - they are never sent over the internet. There are no accounts. If you delete your records, they are deleted permanently.
       </p>
 
       <p>
-        You can export your records, and import them later if you want to have them on a different computer, mobile device, or just in another browser. Export allows to keep 
+        You can export your records, and import them later if you want to have them on a different device or another browser. Export allows to keep 
         records' archive or to share them with other people.
       </p>
 
       <p>
-        When you import records from a backup, the existing data in the app (if any) is deleted and replaced with new records from the imported archive. If you want to work with multiple backup files, you can use separate browsers, separate devices or work in incognito mode.
+        When you import records from a backup, the existing data in the app (if any) is deleted and replaced with new records from the imported archive.
       </p>
       
       <div style="height:10px;"></div>
