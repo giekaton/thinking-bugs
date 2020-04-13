@@ -29,4 +29,4 @@ npm run build
 
 Mobile views in dark mode.
 
-![Screenshot 01](https://raw.githubusercontent.com/giekaton/thinking-bugs/master/public/img/screenshot-github-01.png)
+<img src="https://raw.githubusercontent.com/giekaton/thinking-bugs/master/public/img/screenshot-github-01.png" alt="Screenshot 01" width="700"/>
