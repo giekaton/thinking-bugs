@@ -23,3 +23,10 @@ npm run serve
 ```
 npm run build
 ```
+
+
+### App screenshots
+
+Mobile views in dark mode.
+
+![Screenshot 01](https://raw.githubusercontent.com/giekaton/thinking-bugs/master/public/img/screenshot-github-01.png)

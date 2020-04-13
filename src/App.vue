@@ -296,13 +296,6 @@ export default {
     }
   }
 
-  @media screen and (max-width:600px) {
-    .site-content {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  }
-
   .icon-text {
     padding-left: 55px;
     padding-top: 5px;
@@ -644,7 +637,34 @@ export default {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.1), 0 2px 10px 0 rgba(0,0,0,.15);
   }
 
-  @media only screen and (max-width: 600px) {
+
+  @media screen and (max-width:680px) {
+    .site-content {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .header {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  @media screen and (max-width:550px) {
+    .site-content {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .header {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  @media screen and (max-width:450px) {
+    .site-content {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
     .header {
       padding-left: 20px;
       padding-right: 20px;
