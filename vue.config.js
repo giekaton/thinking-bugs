@@ -5,7 +5,6 @@ const PrerenderSPAPlugin = require('prerender-spa-plugin')
 module.exports = {
   configureWebpack: {
 
-
     plugins: [
       new PrerenderSPAPlugin({
 
@@ -13,12 +12,10 @@ module.exports = {
         staticDir: path.join(__dirname, 'dist'),
 
         // Required - Routes to render.
-        routes: [ '/', '/about', '/cbt-app', '/all-or-nothing-thinking', '/discounting-positives', '/emotional-reasoning', '/fortune-telling', '/labeling', '/magnification-or-minimization', '/mental-filter', '/mind-reading', '/other-blame', '/overgeneralization', '/personalization', '/self-blame', '/magical-thinking', '/should-statements' ],
+        routes: [ '/', '/cbt-app', '/all-or-nothing-thinking', '/discounting-positives', '/emotional-reasoning', '/fortune-telling', '/labeling', '/magnification-or-minimization', '/mental-filter', '/mind-reading', '/other-blame', '/overgeneralization', '/personalization', '/self-blame', '/magical-thinking', '/should-statements' ],
 
       })
     ]
 
-
   },
-
 }

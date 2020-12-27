@@ -83,6 +83,10 @@
       </p>
 
       <p>
+            <p>The app is a digital version of the classical CBT practice, based on the <a href="https://feelinggood.com/tag/daily-mood-log/" target="_blank">mood logging technique</a>, as described and popularized by <a href="https://en.wikipedia.org/wiki/David_D._Burns" target="_blank">David D. Burns</a> and <a href="https://en.wikipedia.org/wiki/Aaron_T._Beck" target="_blank">Aaron T. Beck</a>.
+      </p>
+
+      <p>
         The CBT App is privacy-focused by design. Your records are saved on your local device only - they are never sent over the internet. There are no accounts. If you delete your records, they are deleted permanently.
       </p>
 
@@ -241,7 +245,7 @@ export default {
         'Mag': { 
           'is': false,
           'title': 'Magical Thinking',
-          'full': 'Magical Thinking - Different types of irrational and unrealistic thinking.',
+          'full': 'Magical Thinking - Thinking patterns that ignore causal relationships of reality.',
           'short': 'Mag',
           'fixed': false,
           'text': ''

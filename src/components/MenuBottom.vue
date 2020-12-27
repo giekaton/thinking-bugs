@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div style="height:10px;"></div>
 
     <h4>CBT thinking errors list</h4>
 
@@ -317,7 +318,7 @@
     },
 
     mounted () {
-      console.log(this.current);
+      // console.log(this.current);
     },
 
     beforeDestroy () {

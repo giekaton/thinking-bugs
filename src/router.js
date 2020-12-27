@@ -29,11 +29,6 @@ export default new Router({
       meta: {title: 'CBT App - Cognitive Behavioral Therapy Online, Thought Record'}
     },
     {
-      path: '/about',
-      component: Page,
-      meta: {title: 'Thinking Bugs - About the Thinking Bugs and the CBT App'}
-    },
-    {
       path: "/all-or-nothing-thinking",
       component: Page,
       meta: {title: 'All or Nothing Thinking - CBT Cognitive Distortion | Thinking Bugs'}
@@ -53,11 +48,6 @@ export default new Router({
       component: Page,
       meta: {title: 'Fortune Telling - CBT Cognitive Distortion | Thinking Bugs'}
     },
-    // {
-    //   path: "/jumping-to-conclusions",
-    //   component: Page,
-    //   meta: {title: 'Jumping to Conclusions - CBT Cognitive Distortion | Thinking Bugs'}
-    // },
     {
       path: "/labeling",
       component: Page,

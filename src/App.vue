@@ -308,77 +308,6 @@ export default {
 
   /* THEMES */
   :root {
-    --color-logo: #000;
-    --color-bg: #ffffff;
-    --color-font: #303030;
-    --color-bg-header: #ffffff;
-    --color-borderbottom-header: 1px solid #dddddd;
-    /* --color-a: #5a43ce; */
-    /* --color-a: #467ed2; */
-    --color-a: #467ed2;
-    --color-svg-contrast: #342D52;
-    --color-svg-logo: #39298c;
-    --color-logo-text: #222222;;
-    --color-bg-footer: #ffffff;
-    --color-bordertop-footer: 1px solid #dddddd;
-    --color-np-loading:#42318C;
-    --color-button-check-bg: #868686;
-    --color-button-check-border: #b9b9b9; 
-    /* --color-button-check-bg: #3c3750;
-    --color-button-check-border: #998dc7; */
-    --color-button-text: #fff;
-
-    --color-input-underline:rgb(109, 109, 224);
-
-    --app-button-bg: #dce2e6;
-    --app-button-bg-hover: #e7ecee;
-    --app-button-active: #e9eff3;
-    --app-button-text: #325ea0;
-
-    --app-button-2-bg: #dce2e6;
-    --app-button-2-hover: #e7ecee;
-    --app-button-2-active: #e9eff3;
-    --app-button-2-border: #adb0b1;
-    --app-button-2-text: #1b1b1b;
-
-    --app-button-3-bg: #676767;
-    --app-button-3-hover: #6f6f6f;
-    --app-button-3-active: #858585;
-    --app-button-3-border: #8e8e8e;
-    --app-button-3-text: #f9f9f9;
-
-    --bug-bg: #FFDADA;
-
-    --header-bg: #F1F1F2;
-
-    /* --theme-switch-icon-fill: #201D2B; */
-    /* --theme-switch-icon-fill: #3dbdff; */
-    --theme-switch-icon-fill: #e2e2e2;
-
-    --content-quickstart-bg:#f1f1f2;
-    --content-quickstart-border:#bdbdbd;
-
-    --textarea-color: #000;
-    --border: #b6b6b6;
-    --bug-off-bg: #e2e2e2;
-    --bug-off-border: rgb(180, 180, 180);
-    --card-move-fill: black;
-    --error-title-grey: #b4b4b4;
-
-    /* --card-errors-bg: #e5ffc2; */
-    /* --card-errors-bg: #f1ffcc; */
-    --card-errors-bg: #FFFFCC;
-    --textarea-font: 'Times New Roman', Times, serif;
-    --error-title: 'Times New Roman', Times, serif;
-
-    --record-error-fixed-circle-bg: #c8ffaf;
-    --record-error-fixed-circle-border: rgb(38, 226, 0);
-
-    --textarea-cbt-record-thought-padding: 6px 2px 2px 2px;
-    --textarea-cbt-record-bug-padding: 0px 2px 2px 2px;
-  }
-
-  [data-theme="dark"] {
     /* --color-bg: #342d52; */
     /* --color-bg: #151129; */
 
@@ -456,8 +385,79 @@ export default {
     --record-error-fixed-circle-border: rgb(0, 132, 226); */
 
     --textarea-cbt-record-thought-padding: 4px 2px 6px 2px;
-    --textarea-cbt-record-bug-padding: 3px 2px 6px 2px;
-    
+    --textarea-cbt-record-bug-padding: 3px 2px 6px 2px;   
+  }
+
+
+  [data-theme="dark"] {
+    --color-logo: #000;
+    --color-bg: #ffffff;
+    --color-font: #303030;
+    --color-bg-header: #ffffff;
+    --color-borderbottom-header: 1px solid #dddddd;
+    /* --color-a: #5a43ce; */
+    /* --color-a: #467ed2; */
+    --color-a: #467ed2;
+    --color-svg-contrast: #342D52;
+    --color-svg-logo: #39298c;
+    --color-logo-text: #222222;;
+    --color-bg-footer: #ffffff;
+    --color-bordertop-footer: 1px solid #dddddd;
+    --color-np-loading:#42318C;
+    --color-button-check-bg: #868686;
+    --color-button-check-border: #b9b9b9; 
+    /* --color-button-check-bg: #3c3750;
+    --color-button-check-border: #998dc7; */
+    --color-button-text: #fff;
+
+    --color-input-underline:rgb(109, 109, 224);
+
+    --app-button-bg: #dce2e6;
+    --app-button-bg-hover: #e7ecee;
+    --app-button-active: #e9eff3;
+    --app-button-text: #325ea0;
+
+    --app-button-2-bg: #dce2e6;
+    --app-button-2-hover: #e7ecee;
+    --app-button-2-active: #e9eff3;
+    --app-button-2-border: #adb0b1;
+    --app-button-2-text: #1b1b1b;
+
+    --app-button-3-bg: #676767;
+    --app-button-3-hover: #6f6f6f;
+    --app-button-3-active: #858585;
+    --app-button-3-border: #8e8e8e;
+    --app-button-3-text: #f9f9f9;
+
+    --bug-bg: #FFDADA;
+
+    --header-bg: #F1F1F2;
+
+    /* --theme-switch-icon-fill: #201D2B; */
+    /* --theme-switch-icon-fill: #3dbdff; */
+    --theme-switch-icon-fill: #e2e2e2;
+
+    --content-quickstart-bg:#f1f1f2;
+    --content-quickstart-border:#bdbdbd;
+
+    --textarea-color: #000;
+    --border: #b6b6b6;
+    --bug-off-bg: #e2e2e2;
+    --bug-off-border: rgb(180, 180, 180);
+    --card-move-fill: black;
+    --error-title-grey: #b4b4b4;
+
+    /* --card-errors-bg: #e5ffc2; */
+    /* --card-errors-bg: #f1ffcc; */
+    --card-errors-bg: #FFFFCC;
+    --textarea-font: 'Times New Roman', Times, serif;
+    --error-title: 'Times New Roman', Times, serif;
+
+    --record-error-fixed-circle-bg: #c8ffaf;
+    --record-error-fixed-circle-border: rgb(38, 226, 0);
+
+    --textarea-cbt-record-thought-padding: 6px 2px 2px 2px;
+    --textarea-cbt-record-bug-padding: 0px 2px 2px 2px;
   }
 
   /* .textarea-cbt-record-thought {

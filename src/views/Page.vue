@@ -17,7 +17,6 @@ import AllOrNothingThinking from '../content/all-or-nothing-thinking.vue';
 import DiscountingPositives from '../content/discounting-positives';
 import EmotionalReasoning from '../content/emotional-reasoning';
 import FortuneTelling from '../content/fortune-telling';
-// import JumpingToConclusions from '../content/jumping-to-conclusions';
 import Labeling from '../content/labeling';
 import MagnificationOrMinimization from '../content/magnification-or-minimization';
 import Personalization from '../content/personalization';
@@ -28,8 +27,6 @@ import Overgeneralization from '../content/overgeneralization';
 import SelfBlame from '../content/self-blame';
 import ShouldStatements from '../content/should-statements';
 import MagicalThinking from '../content/magical-thinking';
-
-import About from '../content/about';
 
 export default {
   
@@ -57,8 +54,7 @@ export default {
     Overgeneralization,
     SelfBlame,
     ShouldStatements,
-    MagicalThinking,
-    About
+    MagicalThinking
   },
 
   watch:{

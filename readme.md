@@ -6,8 +6,6 @@ Direct link to the CBT App: [https://thinkingbugs.com/cbt-app](https://thinkingb
 
 The CBT App is a digital version of the classical Cognitive Behavioral Therapy.
 
-More info about the Thinking Bugs project: [https://thinkingbugs.com/about](https://thinkingbugs.com/about)
-
 
 ### Project setup
 ```
